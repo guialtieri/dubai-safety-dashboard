@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T08:00:00+04:00",
+  "lastUpdated": "2026-03-14T23:09:15.738Z",
   "nationalSafetyScore": {
     "overall": 72,
     "dayOverDay": 2,
@@ -15,168 +15,686 @@
   "kineticData": {
     "national": {
       "interceptRate": [
-        { "date": "2026-02-28", "value": 99 },
-        { "date": "2026-03-01", "value": 98 },
-        { "date": "2026-03-02", "value": 98 },
-        { "date": "2026-03-03", "value": 97 },
-        { "date": "2026-03-04", "value": 96 },
-        { "date": "2026-03-05", "value": 97 },
-        { "date": "2026-03-06", "value": 98 },
-        { "date": "2026-03-07", "value": 97 },
-        { "date": "2026-03-08", "value": 96 },
-        { "date": "2026-03-09", "value": 95 },
-        { "date": "2026-03-10", "value": 97 },
-        { "date": "2026-03-11", "value": 97 },
-        { "date": "2026-03-12", "value": 96 },
-        { "date": "2026-03-13", "value": 97 },
-        { "date": "2026-03-14", "value": 97 },
-        { "date": "2026-03-15", "value": 97 }
+        {
+          "date": "2026-02-28",
+          "value": 99
+        },
+        {
+          "date": "2026-03-01",
+          "value": 98
+        },
+        {
+          "date": "2026-03-02",
+          "value": 98
+        },
+        {
+          "date": "2026-03-03",
+          "value": 97
+        },
+        {
+          "date": "2026-03-04",
+          "value": 96
+        },
+        {
+          "date": "2026-03-05",
+          "value": 97
+        },
+        {
+          "date": "2026-03-06",
+          "value": 98
+        },
+        {
+          "date": "2026-03-07",
+          "value": 97
+        },
+        {
+          "date": "2026-03-08",
+          "value": 96
+        },
+        {
+          "date": "2026-03-09",
+          "value": 95
+        },
+        {
+          "date": "2026-03-10",
+          "value": 97
+        },
+        {
+          "date": "2026-03-11",
+          "value": 97
+        },
+        {
+          "date": "2026-03-12",
+          "value": 96
+        },
+        {
+          "date": "2026-03-13",
+          "value": 97
+        },
+        {
+          "date": "2026-03-14",
+          "value": 97
+        },
+        {
+          "date": "2026-03-15",
+          "value": 97
+        }
       ],
       "debrisIncidents": [
-        { "date": "2026-02-28", "value": 0 },
-        { "date": "2026-03-01", "value": 1 },
-        { "date": "2026-03-02", "value": 2 },
-        { "date": "2026-03-03", "value": 1 },
-        { "date": "2026-03-04", "value": 3 },
-        { "date": "2026-03-05", "value": 2 },
-        { "date": "2026-03-06", "value": 1 },
-        { "date": "2026-03-07", "value": 4 },
-        { "date": "2026-03-08", "value": 3 },
-        { "date": "2026-03-09", "value": 5 },
-        { "date": "2026-03-10", "value": 2 },
-        { "date": "2026-03-11", "value": 3 },
-        { "date": "2026-03-12", "value": 4 },
-        { "date": "2026-03-13", "value": 2 },
-        { "date": "2026-03-14", "value": 3 },
-        { "date": "2026-03-15", "value": 3 }
+        {
+          "date": "2026-02-28",
+          "value": 0
+        },
+        {
+          "date": "2026-03-01",
+          "value": 1
+        },
+        {
+          "date": "2026-03-02",
+          "value": 2
+        },
+        {
+          "date": "2026-03-03",
+          "value": 1
+        },
+        {
+          "date": "2026-03-04",
+          "value": 3
+        },
+        {
+          "date": "2026-03-05",
+          "value": 2
+        },
+        {
+          "date": "2026-03-06",
+          "value": 1
+        },
+        {
+          "date": "2026-03-07",
+          "value": 4
+        },
+        {
+          "date": "2026-03-08",
+          "value": 3
+        },
+        {
+          "date": "2026-03-09",
+          "value": 5
+        },
+        {
+          "date": "2026-03-10",
+          "value": 2
+        },
+        {
+          "date": "2026-03-11",
+          "value": 3
+        },
+        {
+          "date": "2026-03-12",
+          "value": 4
+        },
+        {
+          "date": "2026-03-13",
+          "value": 2
+        },
+        {
+          "date": "2026-03-14",
+          "value": 3
+        },
+        {
+          "date": "2026-03-15",
+          "value": 3
+        }
       ]
     },
     "byNeighborhood": {
       "Downtown": {
-        "debrisIncidents": [0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0],
+        "debrisIncidents": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
         "localScore": 82,
         "status": "safe"
       },
       "Marina": {
-        "debrisIncidents": [0,0,1,0,1,0,0,1,1,1,0,1,1,0,1,1],
+        "debrisIncidents": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
         "localScore": 64,
         "status": "caution"
       },
       "Jebel Ali": {
-        "debrisIncidents": [0,1,1,1,2,1,1,2,2,3,1,2,2,1,2,2],
+        "debrisIncidents": [
+          0,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          2,
+          2,
+          3,
+          1,
+          2,
+          2,
+          1,
+          2,
+          2
+        ],
         "localScore": 45,
         "status": "warning"
       },
       "DIFC": {
-        "debrisIncidents": [0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0],
+        "debrisIncidents": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
         "localScore": 80,
         "status": "safe"
       },
       "JBR": {
-        "debrisIncidents": [0,0,0,0,1,1,0,1,0,1,0,0,1,1,0,1],
+        "debrisIncidents": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
         "localScore": 66,
         "status": "caution"
       },
       "Al Barsha": {
-        "debrisIncidents": [0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0],
+        "debrisIncidents": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
         "localScore": 79,
         "status": "safe"
       },
       "Silicon Oasis": {
-        "debrisIncidents": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+        "debrisIncidents": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
         "localScore": 85,
         "status": "safe"
       },
       "Palm Jumeirah": {
-        "debrisIncidents": [0,0,1,0,0,0,0,1,0,1,0,1,0,0,1,0],
+        "debrisIncidents": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
         "localScore": 68,
         "status": "caution"
       },
       "Al Furjan": {
-        "debrisIncidents": [0,0,0,0,1,0,0,0,1,1,0,0,1,0,0,0],
+        "debrisIncidents": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
         "localScore": 72,
         "status": "safe"
       },
       "JVC": {
-        "debrisIncidents": [0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0],
+        "debrisIncidents": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
         "localScore": 76,
         "status": "safe"
       },
       "Business Bay": {
-        "debrisIncidents": [0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0],
+        "debrisIncidents": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
         "localScore": 78,
         "status": "safe"
       },
       "Deira": {
-        "debrisIncidents": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+        "debrisIncidents": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
         "localScore": 84,
         "status": "safe"
       },
       "Bur Dubai": {
-        "debrisIncidents": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+        "debrisIncidents": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
         "localScore": 83,
         "status": "safe"
       },
       "Al Quoz": {
-        "debrisIncidents": [0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0],
+        "debrisIncidents": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
         "localScore": 74,
         "status": "safe"
       },
       "International City": {
-        "debrisIncidents": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+        "debrisIncidents": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
         "localScore": 86,
         "status": "safe"
       },
       "Mirdif": {
-        "debrisIncidents": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+        "debrisIncidents": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
         "localScore": 85,
         "status": "safe"
       },
       "Dubai Hills": {
-        "debrisIncidents": [0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0],
+        "debrisIncidents": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
         "localScore": 77,
         "status": "safe"
       },
       "Jumeirah": {
-        "debrisIncidents": [0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0],
+        "debrisIncidents": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
         "localScore": 79,
         "status": "safe"
       },
       "Arabian Ranches": {
-        "debrisIncidents": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+        "debrisIncidents": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
         "localScore": 84,
         "status": "safe"
       }
     },
-    "dateLabels": ["2026-02-28","2026-03-01","2026-03-02","2026-03-03","2026-03-04","2026-03-05","2026-03-06","2026-03-07","2026-03-08","2026-03-09","2026-03-10","2026-03-11","2026-03-12","2026-03-13","2026-03-14","2026-03-15"]
+    "dateLabels": [
+      "2026-02-28",
+      "2026-03-01",
+      "2026-03-02",
+      "2026-03-03",
+      "2026-03-04",
+      "2026-03-05",
+      "2026-03-06",
+      "2026-03-07",
+      "2026-03-08",
+      "2026-03-09",
+      "2026-03-10",
+      "2026-03-11",
+      "2026-03-12",
+      "2026-03-13",
+      "2026-03-14",
+      "2026-03-15"
+    ]
   },
   "neighborhoods": {
-    "Al Furjan": { "lat": 25.0356, "lng": 55.1372 },
-    "JVC": { "lat": 25.0551, "lng": 55.2071 },
-    "Downtown": { "lat": 25.1972, "lng": 55.2744 },
-    "Marina": { "lat": 25.0805, "lng": 55.1403 },
-    "JBR": { "lat": 25.0780, "lng": 55.1340 },
-    "Palm Jumeirah": { "lat": 25.1124, "lng": 55.1390 },
-    "Al Barsha": { "lat": 25.1089, "lng": 55.2003 },
-    "Silicon Oasis": { "lat": 25.1215, "lng": 55.3788 },
-    "DIFC": { "lat": 25.2099, "lng": 55.2794 },
-    "Jebel Ali": { "lat": 24.9857, "lng": 55.0272 },
-    "Business Bay": { "lat": 25.1851, "lng": 55.2615 },
-    "Deira": { "lat": 25.2712, "lng": 55.3092 },
-    "Bur Dubai": { "lat": 25.2532, "lng": 55.2929 },
-    "Al Quoz": { "lat": 25.1450, "lng": 55.2350 },
-    "International City": { "lat": 25.1576, "lng": 55.4083 },
-    "Mirdif": { "lat": 25.2260, "lng": 55.4189 },
-    "Dubai Hills": { "lat": 25.1311, "lng": 55.2447 },
-    "Jumeirah": { "lat": 25.2110, "lng": 55.2539 },
-    "Arabian Ranches": { "lat": 25.0580, "lng": 55.2700 }
+    "Al Furjan": {
+      "lat": 25.0356,
+      "lng": 55.1372
+    },
+    "JVC": {
+      "lat": 25.0551,
+      "lng": 55.2071
+    },
+    "Downtown": {
+      "lat": 25.1972,
+      "lng": 55.2744
+    },
+    "Marina": {
+      "lat": 25.0805,
+      "lng": 55.1403
+    },
+    "JBR": {
+      "lat": 25.078,
+      "lng": 55.134
+    },
+    "Palm Jumeirah": {
+      "lat": 25.1124,
+      "lng": 55.139
+    },
+    "Al Barsha": {
+      "lat": 25.1089,
+      "lng": 55.2003
+    },
+    "Silicon Oasis": {
+      "lat": 25.1215,
+      "lng": 55.3788
+    },
+    "DIFC": {
+      "lat": 25.2099,
+      "lng": 55.2794
+    },
+    "Jebel Ali": {
+      "lat": 24.9857,
+      "lng": 55.0272
+    },
+    "Business Bay": {
+      "lat": 25.1851,
+      "lng": 55.2615
+    },
+    "Deira": {
+      "lat": 25.2712,
+      "lng": 55.3092
+    },
+    "Bur Dubai": {
+      "lat": 25.2532,
+      "lng": 55.2929
+    },
+    "Al Quoz": {
+      "lat": 25.145,
+      "lng": 55.235
+    },
+    "International City": {
+      "lat": 25.1576,
+      "lng": 55.4083
+    },
+    "Mirdif": {
+      "lat": 25.226,
+      "lng": 55.4189
+    },
+    "Dubai Hills": {
+      "lat": 25.1311,
+      "lng": 55.2447
+    },
+    "Jumeirah": {
+      "lat": 25.211,
+      "lng": 55.2539
+    },
+    "Arabian Ranches": {
+      "lat": 25.058,
+      "lng": 55.27
+    }
   },
   "strategicTargets": [
-    { "name": "Jebel Ali Port", "type": "Port / Naval Facility", "lat": 24.9857, "lng": 55.0272 },
-    { "name": "DWC Airport (Al Maktoum Intl)", "type": "Civilian/Military Airport", "lat": 24.8840, "lng": 55.1614 },
-    { "name": "Al Minhad Air Base", "type": "Military (Coalition Forces)", "lat": 25.0278, "lng": 55.3660 },
-    { "name": "Al Dhafra Air Base", "type": "US Military (Abu Dhabi)", "lat": 24.2483, "lng": 54.5477 },
-    { "name": "Dubai Internet City (US Corp Hub)", "type": "US Corporate Offices (Microsoft, Google, Meta, etc.)", "lat": 25.0957, "lng": 55.1548 }
+    {
+      "name": "Jebel Ali Port",
+      "type": "Port / Naval Facility",
+      "lat": 24.9857,
+      "lng": 55.0272
+    },
+    {
+      "name": "DWC Airport (Al Maktoum Intl)",
+      "type": "Civilian/Military Airport",
+      "lat": 24.884,
+      "lng": 55.1614
+    },
+    {
+      "name": "Al Minhad Air Base",
+      "type": "Military (Coalition Forces)",
+      "lat": 25.0278,
+      "lng": 55.366
+    },
+    {
+      "name": "Al Dhafra Air Base",
+      "type": "US Military (Abu Dhabi)",
+      "lat": 24.2483,
+      "lng": 54.5477
+    },
+    {
+      "name": "Dubai Internet City (US Corp Hub)",
+      "type": "US Corporate Offices (Microsoft, Google, Meta, etc.)",
+      "lat": 25.0957,
+      "lng": 55.1548
+    }
   ],
   "infrastructure": {
     "schoolClosures": {
@@ -202,96 +720,271 @@
         "emirate": "Abu Dhabi",
         "lat": 24.2075,
         "lng": 55.7447,
-        "availabilityPct": 65,
-        "availabilityYesterday": 72,
-        "avgPriceAED": 1540,
-        "notes": "Inland city, 130+ km from coast. Multiple hotel options."
+        "availabilityPct": 50,
+        "availabilityYesterday": 65,
+        "avgPriceAED": 1000,
+        "notes": ""
       },
       {
         "destination": "Hatta",
         "emirate": "Dubai",
         "lat": 24.7953,
         "lng": 56.1097,
-        "availabilityPct": 42,
-        "availabilityYesterday": 48,
-        "avgPriceAED": 1030,
-        "notes": "Mountain enclave, popular domestic getaway. Limited rooms."
+        "availabilityPct": 50,
+        "availabilityYesterday": 42,
+        "avgPriceAED": 1000,
+        "notes": ""
       },
       {
         "destination": "Dibba (Fujairah)",
         "emirate": "Fujairah",
         "lat": 25.6189,
         "lng": 56.2631,
-        "availabilityPct": 71,
-        "availabilityYesterday": 73,
-        "avgPriceAED": 1285,
-        "notes": "East coast, far from strategic gulf-side targets."
+        "availabilityPct": 50,
+        "availabilityYesterday": 71,
+        "avgPriceAED": 1000,
+        "notes": ""
       },
       {
         "destination": "Ras Al Khaimah City",
         "emirate": "RAK",
         "lat": 25.7895,
         "lng": 55.9432,
-        "availabilityPct": 58,
-        "availabilityYesterday": 60,
-        "avgPriceAED": 1395,
-        "notes": "Northern emirate, furthest from southern military installations."
+        "availabilityPct": 50,
+        "availabilityYesterday": 58,
+        "avgPriceAED": 1000,
+        "notes": ""
       },
       {
         "destination": "Ajman City",
         "emirate": "Ajman",
         "lat": 25.4052,
         "lng": 55.5136,
-        "availabilityPct": 74,
+        "availabilityPct": 50,
         "availabilityYesterday": 74,
-        "avgPriceAED": 920,
-        "notes": "Smaller emirate, relatively close to Dubai. Budget-friendly."
+        "avgPriceAED": 1000,
+        "notes": ""
       },
       {
         "destination": "Fujairah City",
         "emirate": "Fujairah",
         "lat": 25.1288,
         "lng": 56.3264,
-        "availabilityPct": 67,
-        "availabilityYesterday": 69,
-        "avgPriceAED": 1100,
-        "notes": "East coast port city, outside the Persian Gulf."
+        "availabilityPct": 50,
+        "availabilityYesterday": 67,
+        "avgPriceAED": 1000,
+        "notes": ""
       },
       {
         "destination": "Khor Fakkan",
         "emirate": "Sharjah",
         "lat": 25.3459,
         "lng": 56.3512,
-        "availabilityPct": 80,
+        "availabilityPct": 50,
         "availabilityYesterday": 80,
-        "avgPriceAED": 850,
-        "notes": "East coast enclave of Sharjah, sheltered location."
+        "avgPriceAED": 1000,
+        "notes": ""
       }
     ],
     "flights": [
-      { "city": "Muscat", "code": "MCT", "country": "Oman", "dxbPriceAED": 1175, "auhPriceAED": 1065, "dxbDeltaAED": 37, "auhDeltaAED": 18, "dxbDepart": "2026-03-15T14:30+04:00", "auhDepart": "2026-03-15T16:00+04:00", "airline": "Oman Air" },
-      { "city": "Frankfurt", "code": "FRA", "country": "Germany", "dxbPriceAED": 2535, "auhPriceAED": 2460, "dxbDeltaAED": 55, "auhDeltaAED": 37, "dxbDepart": "2026-03-15T15:10+04:00", "auhDepart": "2026-03-15T18:45+04:00", "airline": "Lufthansa" },
-      { "city": "Amsterdam", "code": "AMS", "country": "Netherlands", "dxbPriceAED": 2645, "auhPriceAED": 2570, "dxbDeltaAED": 73, "auhDeltaAED": 55, "dxbDepart": "2026-03-15T16:20+04:00", "auhDepart": "2026-03-15T22:15+04:00", "airline": "KLM" },
-      { "city": "Paris", "code": "CDG", "country": "France", "dxbPriceAED": 2755, "auhPriceAED": 2680, "dxbDeltaAED": -37, "auhDeltaAED": -55, "dxbDepart": "2026-03-15T17:05+04:00", "auhDepart": "2026-03-16T01:30+04:00", "airline": "Air France" },
-      { "city": "Rome", "code": "FCO", "country": "Italy", "dxbPriceAED": 2865, "auhPriceAED": 2755, "dxbDeltaAED": -92, "auhDeltaAED": -110, "dxbDepart": "2026-03-15T19:35+04:00", "auhDepart": "2026-03-16T08:00+04:00", "airline": "Emirates" },
-      { "city": "London", "code": "LHR", "country": "United Kingdom", "dxbPriceAED": 3120, "auhPriceAED": 3010, "dxbDeltaAED": 165, "auhDeltaAED": 110, "dxbDepart": "2026-03-15T20:45+04:00", "auhDepart": "2026-03-15T23:10+04:00", "airline": "Emirates" },
-      { "city": "Lisbon", "code": "LIS", "country": "Portugal", "dxbPriceAED": 3380, "auhPriceAED": 3270, "dxbDeltaAED": -55, "auhDeltaAED": -73, "dxbDepart": "2026-03-15T22:00+04:00", "auhDepart": "2026-03-16T09:30+04:00", "airline": "TAP" },
-      { "city": "Rio de Janeiro", "code": "GIG", "country": "Brazil", "dxbPriceAED": 4225, "auhPriceAED": 4335, "dxbDeltaAED": 220, "auhDeltaAED": 275, "dxbDepart": "2026-03-16T02:15+04:00", "auhDepart": "2026-03-16T10:00+04:00", "airline": "Emirates" },
-      { "city": "São Paulo", "code": "GRU", "country": "Brazil", "dxbPriceAED": 4410, "auhPriceAED": 4225, "dxbDeltaAED": 294, "auhDeltaAED": 239, "dxbDepart": "2026-03-16T03:30+04:00", "auhDepart": "2026-03-16T11:45+04:00", "airline": "Etihad" },
-      { "city": "Istanbul", "code": "IST", "country": "Turkey", "dxbPriceAED": 1835, "auhPriceAED": 1910, "dxbDeltaAED": 55, "auhDeltaAED": 73, "dxbDepart": "2026-03-15T13:50+04:00", "auhDepart": "2026-03-15T17:20+04:00", "airline": "Turkish Airlines" },
-      { "city": "Mumbai", "code": "BOM", "country": "India", "dxbPriceAED": 920, "auhPriceAED": 990, "dxbDeltaAED": -18, "auhDeltaAED": 37, "dxbDepart": "2026-03-15T14:00+04:00", "auhDepart": "2026-03-15T15:30+04:00", "airline": "Emirates" },
-      { "city": "Cairo", "code": "CAI", "country": "Egypt", "dxbPriceAED": 1285, "auhPriceAED": 1210, "dxbDeltaAED": 37, "auhDeltaAED": 18, "dxbDepart": "2026-03-15T15:45+04:00", "auhDepart": "2026-03-15T19:00+04:00", "airline": "EgyptAir" },
-      { "city": "Nairobi", "code": "NBO", "country": "Kenya", "dxbPriceAED": 1650, "auhPriceAED": 1760, "dxbDeltaAED": -73, "auhDeltaAED": -37, "dxbDepart": "2026-03-15T23:30+04:00", "auhDepart": "2026-03-16T06:00+04:00", "airline": "Kenya Airways" }
+      {
+        "city": "Muscat",
+        "code": "MCT",
+        "country": "Oman",
+        "dxbPriceAED": 0,
+        "auhPriceAED": 0,
+        "dxbDeltaAED": -1175,
+        "auhDeltaAED": -1065,
+        "dxbDepart": "2026-03-14T12:00+04:00",
+        "auhDepart": "2026-03-14T14:00+04:00",
+        "airline": "Various"
+      },
+      {
+        "city": "Frankfurt",
+        "code": "FRA",
+        "country": "Germany",
+        "dxbPriceAED": 0,
+        "auhPriceAED": 0,
+        "dxbDeltaAED": -2535,
+        "auhDeltaAED": -2460,
+        "dxbDepart": "2026-03-14T12:00+04:00",
+        "auhDepart": "2026-03-14T14:00+04:00",
+        "airline": "Various"
+      },
+      {
+        "city": "Amsterdam",
+        "code": "AMS",
+        "country": "Netherlands",
+        "dxbPriceAED": 0,
+        "auhPriceAED": 0,
+        "dxbDeltaAED": -2645,
+        "auhDeltaAED": -2570,
+        "dxbDepart": "2026-03-14T12:00+04:00",
+        "auhDepart": "2026-03-14T14:00+04:00",
+        "airline": "Various"
+      },
+      {
+        "city": "Paris",
+        "code": "CDG",
+        "country": "France",
+        "dxbPriceAED": 0,
+        "auhPriceAED": 0,
+        "dxbDeltaAED": -2755,
+        "auhDeltaAED": -2680,
+        "dxbDepart": "2026-03-14T12:00+04:00",
+        "auhDepart": "2026-03-14T14:00+04:00",
+        "airline": "Various"
+      },
+      {
+        "city": "Rome",
+        "code": "FCO",
+        "country": "Italy",
+        "dxbPriceAED": 0,
+        "auhPriceAED": 0,
+        "dxbDeltaAED": -2865,
+        "auhDeltaAED": -2755,
+        "dxbDepart": "2026-03-14T12:00+04:00",
+        "auhDepart": "2026-03-14T14:00+04:00",
+        "airline": "Various"
+      },
+      {
+        "city": "London",
+        "code": "LHR",
+        "country": "United Kingdom",
+        "dxbPriceAED": 0,
+        "auhPriceAED": 0,
+        "dxbDeltaAED": -3120,
+        "auhDeltaAED": -3010,
+        "dxbDepart": "2026-03-14T12:00+04:00",
+        "auhDepart": "2026-03-14T14:00+04:00",
+        "airline": "Various"
+      },
+      {
+        "city": "Lisbon",
+        "code": "LIS",
+        "country": "Portugal",
+        "dxbPriceAED": 0,
+        "auhPriceAED": 0,
+        "dxbDeltaAED": -3380,
+        "auhDeltaAED": -3270,
+        "dxbDepart": "2026-03-14T12:00+04:00",
+        "auhDepart": "2026-03-14T14:00+04:00",
+        "airline": "Various"
+      },
+      {
+        "city": "Rio de Janeiro",
+        "code": "GIG",
+        "country": "Brazil",
+        "dxbPriceAED": 0,
+        "auhPriceAED": 0,
+        "dxbDeltaAED": -4225,
+        "auhDeltaAED": -4335,
+        "dxbDepart": "2026-03-14T12:00+04:00",
+        "auhDepart": "2026-03-14T14:00+04:00",
+        "airline": "Various"
+      },
+      {
+        "city": "São Paulo",
+        "code": "GRU",
+        "country": "Brazil",
+        "dxbPriceAED": 0,
+        "auhPriceAED": 0,
+        "dxbDeltaAED": -4410,
+        "auhDeltaAED": -4225,
+        "dxbDepart": "2026-03-14T12:00+04:00",
+        "auhDepart": "2026-03-14T14:00+04:00",
+        "airline": "Various"
+      },
+      {
+        "city": "Istanbul",
+        "code": "IST",
+        "country": "Turkey",
+        "dxbPriceAED": 0,
+        "auhPriceAED": 0,
+        "dxbDeltaAED": -1835,
+        "auhDeltaAED": -1910,
+        "dxbDepart": "2026-03-14T12:00+04:00",
+        "auhDepart": "2026-03-14T14:00+04:00",
+        "airline": "Various"
+      },
+      {
+        "city": "Mumbai",
+        "code": "BOM",
+        "country": "India",
+        "dxbPriceAED": 0,
+        "auhPriceAED": 0,
+        "dxbDeltaAED": -920,
+        "auhDeltaAED": -990,
+        "dxbDepart": "2026-03-14T12:00+04:00",
+        "auhDepart": "2026-03-14T14:00+04:00",
+        "airline": "Various"
+      },
+      {
+        "city": "Cairo",
+        "code": "CAI",
+        "country": "Egypt",
+        "dxbPriceAED": 0,
+        "auhPriceAED": 0,
+        "dxbDeltaAED": -1285,
+        "auhDeltaAED": -1210,
+        "dxbDepart": "2026-03-14T12:00+04:00",
+        "auhDepart": "2026-03-14T14:00+04:00",
+        "airline": "Various"
+      },
+      {
+        "city": "Nairobi",
+        "code": "NBO",
+        "country": "Kenya",
+        "dxbPriceAED": 0,
+        "auhPriceAED": 0,
+        "dxbDeltaAED": -1650,
+        "auhDeltaAED": -1760,
+        "dxbDepart": "2026-03-14T12:00+04:00",
+        "auhDepart": "2026-03-14T14:00+04:00",
+        "airline": "Various"
+      }
     ]
   },
   "dataSources": [
-    { "name": "UAE National Defense Briefings", "url": "#", "category": "Kinetic / Military" },
-    { "name": "NCEMA (National Crisis & Emergency Authority)", "url": "https://www.ncema.gov.ae", "category": "Infrastructure" },
-    { "name": "Google Flights", "url": "https://www.google.com/flights", "category": "Flight Pricing" },
-    { "name": "Booking.com", "url": "https://www.booking.com", "category": "Hotel Availability" },
-    { "name": "WAM (Emirates News Agency)", "url": "https://www.wam.ae", "category": "Diplomatic / News" },
-    { "name": "ADNOC / ENOC Distribution", "url": "https://www.enoc.com", "category": "Fuel Supply" },
-    { "name": "Skyscanner", "url": "https://www.skyscanner.ae", "category": "Flight Comparison" },
-    { "name": "SIPRI Arms Transfers Database", "url": "https://www.sipri.org", "category": "Military Data" }
+    {
+      "name": "UAE National Defense Briefings",
+      "url": "#",
+      "category": "Kinetic / Military"
+    },
+    {
+      "name": "NCEMA (National Crisis & Emergency Authority)",
+      "url": "https://www.ncema.gov.ae",
+      "category": "Infrastructure"
+    },
+    {
+      "name": "Google Flights",
+      "url": "https://www.google.com/flights",
+      "category": "Flight Pricing"
+    },
+    {
+      "name": "Booking.com",
+      "url": "https://www.booking.com",
+      "category": "Hotel Availability"
+    },
+    {
+      "name": "WAM (Emirates News Agency)",
+      "url": "https://www.wam.ae",
+      "category": "Diplomatic / News"
+    },
+    {
+      "name": "ADNOC / ENOC Distribution",
+      "url": "https://www.enoc.com",
+      "category": "Fuel Supply"
+    },
+    {
+      "name": "Skyscanner",
+      "url": "https://www.skyscanner.ae",
+      "category": "Flight Comparison"
+    },
+    {
+      "name": "SIPRI Arms Transfers Database",
+      "url": "https://www.sipri.org",
+      "category": "Military Data"
+    }
   ]
 }
