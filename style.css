@@ -111,6 +111,64 @@ body {
   50% { opacity: 0.7; box-shadow: 0 0 0 6px rgba(34,197,94,0); }
 }
 
+/* ---- Donate Button ---- */
+.btn-donate {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-donate .donate-icon { font-size: 0.9rem; }
+
+/* The animated glowing border */
+.btn-donate::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0%,
+    var(--accent-primary) 20%,
+    transparent 40%,
+    transparent 50%,
+    var(--accent-blue) 70%,
+    transparent 90%
+  );
+  animation: rotateGlow 3s linear infinite;
+  z-index: -2;
+}
+
+/* The dark inner background to mask the inner gradient */
+.btn-donate::after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-secondary);
+  border-radius: calc(var(--radius-sm) - 1px);
+  z-index: -1;
+  transition: background 0.3s;
+}
+
+.btn-donate:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,255,200,0.15); }
+.btn-donate:hover::after { background: var(--bg-card-hover); }
+.btn-donate:hover::before { animation-duration: 1.5s; }
+
+@keyframes rotateGlow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /* ---- Neighborhood Bar ---- */
 .neighborhood-bar {
   display: flex;
