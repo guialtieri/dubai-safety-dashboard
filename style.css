@@ -435,7 +435,18 @@ body {
 
 /* ---- Footer ---- */
 .dashboard-footer { margin-top: var(--space-2xl); padding-top: var(--space-lg); border-top: 1px solid var(--border-glass); }
-.footer-title { font-size: 0.78rem; font-weight: 600; color: var(--text-secondary); margin-bottom: var(--space-md); display: flex; align-items: center; gap: 8px; }
+
+.footer-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-md); flex-wrap: wrap; gap: var(--space-md); }
+.footer-title { font-size: 0.78rem; font-weight: 600; color: var(--text-secondary); display: flex; align-items: center; gap: 8px; }
+
+.btn-feedback {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 14px; background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border-glass-hover); border-radius: var(--radius-sm);
+  color: var(--text-secondary); text-decoration: none;
+  font-size: 0.75rem; font-weight: 600; transition: all 0.2s;
+}
+.btn-feedback:hover { background: rgba(255,255,255,0.08); color: var(--text-primary); border-color: rgba(255,255,255,0.15); }
 
 .sources-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: var(--space-sm); }
 

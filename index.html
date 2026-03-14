@@ -6,7 +6,7 @@
   <meta name="description" content="Geopolitical Safety & Logistics Dashboard for Dubai residents — real-time safety metrics, evacuation logistics, and infrastructure monitoring.">
   <title>Dubai Safety Dashboard — Geopolitical Safety & Logistics</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" integrity="sha384-vsrfeLOOY6KuIYKDlmVH5UiBmgIdB1oEf7p01YgWHuqmOHfZr374+odEv96n9tNC" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="dashboard" id="app">
@@ -201,7 +201,12 @@
 
     <!-- ============ FOOTER ============ -->
     <footer class="dashboard-footer" id="sectionFooter">
-      <div class="footer-title">📎 Data Sources &amp; Methodology</div>
+      <div class="footer-top">
+        <div class="footer-title">📎 Data Sources &amp; Methodology</div>
+        <a href="mailto:gui.amaral-dubaidashboard@manus.bot?subject=Dubai%20Dashboard%20Feedback" class="btn-feedback" target="_blank" rel="noopener noreferrer">
+          ✉️ Provide Feedback
+        </a>
+      </div>
       <div class="sources-grid" id="sourcesGrid"></div>
       <p class="methodology-note">
         <strong>Methodology:</strong> The Safety Score is calculated using a weighted algorithm: Kinetic/Military (35%), Infrastructure/Logistics (25%), Diplomatic Advisories (20%), Economic/Flight pricing (10%), Social/Closures (10%). Each sub-score ranges 0–100, adjusted per neighborhood based on local debris history and target proximity. Data refreshed daily at 08:00 GST. Flight prices are indicative. This dashboard is for informational purposes only and does not replace official government advisories.
