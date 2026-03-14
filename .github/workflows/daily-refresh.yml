@@ -1,0 +1,36 @@
+name: Daily Data Refresh (08:00 GST)
+
+on:
+  schedule:
+    # 04:00 UTC = 08:00 GST (UAE Time)
+    - cron: '0 4 * * *'
+  workflow_dispatch:  # Allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch fresh data from APIs
+        env:
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+        run: node scripts/fetch-data.js
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "Dashboard Bot"
+          git config user.email "bot@dashboard.local"
+          git add data/dashboard-state.json
+          # Only commit if there are actual changes
+          git diff --staged --quiet || git commit -m "🔄 Daily data refresh — $(date -u +%Y-%m-%d)"
+          git push

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Geopolitical Safety & Logistics Dashboard for Dubai residents — real-time safety metrics, evacuation logistics, and infrastructure monitoring.">
+  <title>Dubai Safety Dashboard — Geopolitical Safety & Logistics</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="dashboard" id="app">
+
+    <!-- ============ HEADER ============ -->
+    <header class="dashboard-header">
+      <div class="header-top">
+        <div>
+          <h1 class="dashboard-title">Dubai Safety Dashboard</h1>
+          <p class="dashboard-subtitle">Geopolitical Safety &amp; Logistics · Iran-Israel Conflict Monitor</p>
+        </div>
+        <div class="header-actions">
+          <div class="last-updated" id="lastUpdated">
+            <span class="pulse-dot"></span>
+            <span id="lastUpdatedText">Loading…</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEIGHBORHOOD SELECTOR — TOP LEVEL -->
+      <div class="neighborhood-bar">
+        <label for="neighborhoodSelect">📍 Your Location</label>
+        <select id="neighborhoodSelect"></select>
+        <span class="neighborhood-hint">All dashboard data adapts to your selected neighborhood</span>
+      </div>
+    </header>
+
+    <!-- ============ OVERALL SAFETY SCORE ============ -->
+    <section class="dashboard-section" id="sectionScore">
+      <h2 class="section-title">Overall Safety Score</h2>
+      <div class="score-row">
+        <!-- Score gauge -->
+        <div class="card score-card" id="scoreCard">
+          <div class="score-gauge" id="scoreGauge">
+            <svg viewBox="0 0 120 120">
+              <circle class="track" cx="60" cy="60" r="52"/>
+              <circle class="fill" id="scoreFill" cx="60" cy="60" r="52"/>
+            </svg>
+            <div class="score-value">
+              <span class="score-number" id="scoreNumber">--</span>
+              <span class="score-label">Safety Score</span>
+            </div>
+          </div>
+          <div class="score-trend" id="scoreTrend">
+            <span id="trendArrow"></span>
+            <span id="trendValue"></span>
+          </div>
+          <div class="score-tier" id="scoreTier"></div>
+          <div class="score-timestamp" id="scoreTimestamp"></div>
+        </div>
+
+        <!-- Right column: recommendation + tier legend + briefing -->
+        <div class="score-right">
+          <!-- Action recommendation -->
+          <div class="recommendation-box" id="recommendationBox">
+            <span class="rec-icon" id="recIcon"></span>
+            <div>
+              <h3 id="recTitle"></h3>
+              <p id="recText"></p>
+            </div>
+          </div>
+
+          <!-- Inline tier legend -->
+          <div class="tier-legend-inline">
+            <div class="tier-item" data-tier="safe"><span class="tier-dot" style="background:#22c55e"></span><strong>75–100</strong> Safe Zone</div>
+            <div class="tier-item" data-tier="caution"><span class="tier-dot" style="background:#facc15"></span><strong>50–74</strong> Caution</div>
+            <div class="tier-item" data-tier="warning"><span class="tier-dot" style="background:#f97316"></span><strong>25–49</strong> Warning</div>
+            <div class="tier-item" data-tier="critical"><span class="tier-dot" style="background:#ef4444"></span><strong>0–24</strong> Critical</div>
+            <button class="btn-full-guide" id="btnLegend">View Full Color Guide →</button>
+          </div>
+
+          <!-- Daily briefing -->
+          <div class="card briefing-card">
+            <h3>📋 Daily Context Briefing</h3>
+            <p class="briefing-text" id="briefingText">Loading briefing…</p>
+            <div class="briefing-trends" id="briefingTrends">
+              <h4>Detected Trends</h4>
+              <div class="trend-tags" id="trendTags"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTILE & MISSILE STATISTICS ============ -->
+    <section class="dashboard-section" id="sectionKinetic">
+      <h2 class="section-title">Projectile &amp; Missile Statistics</h2>
+      <div class="kinetic-row">
+        <!-- Intercept Rate Chart -->
+        <div class="card">
+          <div class="chart-header">
+            <div>
+              <div class="chart-title">National Intercept Rate</div>
+              <div class="chart-value" id="interceptValue">--%</div>
+              <div class="chart-subtitle">Daily data since Feb 28, 2026</div>
+            </div>
+          </div>
+          <div class="chart-container">
+            <canvas id="interceptChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Debris Incidents Chart -->
+        <div class="card">
+          <div class="chart-header">
+            <div>
+              <div class="chart-title" id="debrisChartTitle">Debris Incidents — All Areas</div>
+              <div class="chart-value" id="debrisValue">--</div>
+              <div class="chart-subtitle">Daily count since Feb 28, 2026 · Click a neighborhood below to filter</div>
+            </div>
+          </div>
+          <div class="chart-container">
+            <canvas id="debrisChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Neighborhood Heatmap (clickable) -->
+      <div class="card heatmap-card">
+        <div class="heatmap-header">
+          <div class="heatmap-title">Neighborhood Debris Heatmap</div>
+          <span class="heatmap-hint">Click any area to filter the debris chart above</span>
+        </div>
+        <div class="heatmap-grid" id="heatmapGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ PROXIMITY TO STRATEGIC TARGETS ============ -->
+    <section class="dashboard-section" id="sectionProximity">
+      <h2 class="section-title">Proximity to Strategic Targets</h2>
+      <div class="card">
+        <p class="section-desc">Distance from <strong id="proximityNeighborhood">your area</strong> to known military and strategic installations. Distances under 15 km marked red, 15–30 km yellow, over 30 km green.</p>
+        <div class="proximity-list" id="proximityList"></div>
+      </div>
+    </section>
+
+    <!-- ============ INFRASTRUCTURE STATUS ============ -->
+    <section class="dashboard-section" id="sectionInfra">
+      <h2 class="section-title">Infrastructure Status</h2>
+      <div class="infra-row" id="infraRow"></div>
+    </section>
+
+    <!-- ============ EVACUATION OPTIONS ============ -->
+    <section class="dashboard-section" id="sectionEvac">
+      <h2 class="section-title">Evacuation Options</h2>
+
+      <div class="evac-grid">
+        <!-- Internal Relocation -->
+        <div class="card">
+          <div class="evac-section-header">
+            <span class="icon">🏨</span>
+            <h3>Stay in UAE — Relocate to a Safer Area</h3>
+          </div>
+          <p class="evac-section-desc">Hotel availability in safer domestic destinations further from strategic targets.</p>
+          <table class="data-table" id="internalTable">
+            <thead>
+              <tr>
+                <th>Destination</th>
+                <th>Emirate</th>
+                <th>Distance</th>
+                <th>Availability</th>
+                <th>Avg. Price/Night</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <!-- International Flights -->
+        <div class="card">
+          <div class="evac-section-header">
+            <span class="icon">✈️</span>
+            <h3>Leave the Country — Next Available Flights</h3>
+          </div>
+          <p class="evac-section-desc">One-way flights sorted by earliest departure. Prices from both Dubai (DXB) and Abu Dhabi (AUH) airports. <strong>▲ / ▼ = price change vs. yesterday.</strong></p>
+          <div style="overflow-x:auto;">
+            <table class="data-table" id="flightsTable">
+              <thead>
+                <tr>
+                  <th>Destination</th>
+                  <th>Departure</th>
+                  <th>From Dubai (DXB)</th>
+                  <th>From Abu Dhabi (AUH)</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="dashboard-footer" id="sectionFooter">
+      <div class="footer-title">📎 Data Sources &amp; Methodology</div>
+      <div class="sources-grid" id="sourcesGrid"></div>
+      <p class="methodology-note">
+        <strong>Methodology:</strong> The Safety Score is calculated using a weighted algorithm: Kinetic/Military (35%), Infrastructure/Logistics (25%), Diplomatic Advisories (20%), Economic/Flight pricing (10%), Social/Closures (10%). Each sub-score ranges 0–100, adjusted per neighborhood based on local debris history and target proximity. Data refreshed daily at 08:00 GST. Flight prices are indicative. This dashboard is for informational purposes only and does not replace official government advisories.
+      </p>
+    </footer>
+  </div>
+
+  <!-- ============ LEGEND MODAL ============ -->
+  <div class="modal-overlay" id="legendModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Full Color Guide</h2>
+        <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+      </div>
+
+      <div class="legend-section-title">Safety Score Zones</div>
+      <div class="legend-items">
+        <div class="legend-item">
+          <span class="legend-dot" style="background:var(--color-safe)"></span>
+          <div>
+            <h4 style="color:var(--color-safe)">Safe Zone (75–100)</h4>
+            <p>Normal vigilance. Continue daily routines with standard awareness.</p>
+          </div>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot" style="background:var(--color-caution)"></span>
+          <div>
+            <h4 style="color:var(--color-caution)">Caution Zone (50–74)</h4>
+            <p>Elevated risk indicators. Stay informed and ensure essential documents are accessible. Consider your personal risk tolerance.</p>
+          </div>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot" style="background:var(--color-warning)"></span>
+          <div>
+            <h4 style="color:var(--color-warning)">Warning Zone (25–49)</h4>
+            <p>Multiple risk factors active. Consider relocating to a safer area within the UAE. Prepare go-bags.</p>
+          </div>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot" style="background:var(--color-critical)"></span>
+          <div>
+            <h4 style="color:var(--color-critical)">Critical Zone (0–24)</h4>
+            <p>Immediate departure recommended. Book the next available flight. Contact your embassy.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="legend-section-title" style="margin-top:var(--space-lg)">Heatmap &amp; Proximity Colors</div>
+      <div class="legend-items">
+        <div class="legend-item">
+          <span class="legend-dot" style="background:var(--color-safe)"></span>
+          <div><h4>Green</h4><p>No or minimal incidents. Area is clear. Distance &gt;30 km from targets.</p></div>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot" style="background:var(--color-caution)"></span>
+          <div><h4>Yellow</h4><p>Some debris reported. Exercise awareness. Distance 15–30 km from targets.</p></div>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot" style="background:var(--color-warning)"></span>
+          <div><h4>Orange</h4><p>Multiple incidents. Limit outdoor exposure. Distance &lt;15 km from targets.</p></div>
+        </div>
+      </div>
+
+      <div class="legend-section-title" style="margin-top:var(--space-lg)">Flight Price Indicators</div>
+      <div class="legend-items">
+        <div class="legend-item">
+          <span class="legend-dot" style="background:var(--color-safe)"></span>
+          <div><h4>▼ Green = Price Dropped vs. Yesterday</h4><p>Better deal available today compared to yesterday.</p></div>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot" style="background:var(--color-critical)"></span>
+          <div><h4>▲ Red = Price Increased vs. Yesterday</h4><p>Price has risen — consider booking sooner rather than later.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
