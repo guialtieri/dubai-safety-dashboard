@@ -167,7 +167,7 @@ async function fetchFlights() {
       }
     }
 
-    await sleep(300); // Rate limiting
+    await sleep(2000); // Strict Rate limiting
 
     // AUH → dest
     try {
@@ -201,7 +201,7 @@ async function fetchFlights() {
       }
     }
 
-    await sleep(300); // Rate limiting
+    await sleep(2000); // Strict Rate limiting
 
     flights.push({
       city: dest.city,
@@ -357,7 +357,7 @@ async function fetchHotels() {
       });
     }
 
-    await sleep(500); // Rate limiting
+    await sleep(3000); // Strict Rate limiting for hotels
   }
 
   return results;
