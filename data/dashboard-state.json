@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-14T23:09:15.738Z",
+  "lastUpdated": "2026-03-15T00:10:07.082Z",
   "nationalSafetyScore": {
     "overall": 72,
     "dayOverDay": 2,
@@ -721,9 +721,9 @@
         "lat": 24.2075,
         "lng": 55.7447,
         "availabilityPct": 50,
-        "availabilityYesterday": 65,
+        "availabilityYesterday": 50,
         "avgPriceAED": 1000,
-        "notes": ""
+        "notes": "API Error — using fallback data"
       },
       {
         "destination": "Hatta",
@@ -731,9 +731,9 @@
         "lat": 24.7953,
         "lng": 56.1097,
         "availabilityPct": 50,
-        "availabilityYesterday": 42,
+        "availabilityYesterday": 50,
         "avgPriceAED": 1000,
-        "notes": ""
+        "notes": "API Error — using fallback data"
       },
       {
         "destination": "Dibba (Fujairah)",
@@ -741,9 +741,9 @@
         "lat": 25.6189,
         "lng": 56.2631,
         "availabilityPct": 50,
-        "availabilityYesterday": 71,
+        "availabilityYesterday": 50,
         "avgPriceAED": 1000,
-        "notes": ""
+        "notes": "API Error — using fallback data"
       },
       {
         "destination": "Ras Al Khaimah City",
@@ -751,9 +751,9 @@
         "lat": 25.7895,
         "lng": 55.9432,
         "availabilityPct": 50,
-        "availabilityYesterday": 58,
+        "availabilityYesterday": 50,
         "avgPriceAED": 1000,
-        "notes": ""
+        "notes": "API Error — using fallback data"
       },
       {
         "destination": "Ajman City",
@@ -761,9 +761,9 @@
         "lat": 25.4052,
         "lng": 55.5136,
         "availabilityPct": 50,
-        "availabilityYesterday": 74,
+        "availabilityYesterday": 50,
         "avgPriceAED": 1000,
-        "notes": ""
+        "notes": "API Error — using fallback data"
       },
       {
         "destination": "Fujairah City",
@@ -771,9 +771,9 @@
         "lat": 25.1288,
         "lng": 56.3264,
         "availabilityPct": 50,
-        "availabilityYesterday": 67,
+        "availabilityYesterday": 50,
         "avgPriceAED": 1000,
-        "notes": ""
+        "notes": "API Error — using fallback data"
       },
       {
         "destination": "Khor Fakkan",
@@ -781,9 +781,9 @@
         "lat": 25.3459,
         "lng": 56.3512,
         "availabilityPct": 50,
-        "availabilityYesterday": 80,
+        "availabilityYesterday": 50,
         "avgPriceAED": 1000,
-        "notes": ""
+        "notes": "API Error — using fallback data"
       }
     ],
     "flights": [
@@ -793,10 +793,10 @@
         "country": "Oman",
         "dxbPriceAED": 0,
         "auhPriceAED": 0,
-        "dxbDeltaAED": -1175,
-        "auhDeltaAED": -1065,
-        "dxbDepart": "2026-03-14T12:00+04:00",
-        "auhDepart": "2026-03-14T14:00+04:00",
+        "dxbDeltaAED": 0,
+        "auhDeltaAED": 0,
+        "dxbDepart": "2026-03-15T12:00+04:00",
+        "auhDepart": "2026-03-15T14:00+04:00",
         "airline": "Various"
       },
       {
@@ -805,10 +805,10 @@
         "country": "Germany",
         "dxbPriceAED": 0,
         "auhPriceAED": 0,
-        "dxbDeltaAED": -2535,
-        "auhDeltaAED": -2460,
-        "dxbDepart": "2026-03-14T12:00+04:00",
-        "auhDepart": "2026-03-14T14:00+04:00",
+        "dxbDeltaAED": 0,
+        "auhDeltaAED": 0,
+        "dxbDepart": "2026-03-15T12:00+04:00",
+        "auhDepart": "2026-03-15T14:00+04:00",
         "airline": "Various"
       },
       {
@@ -817,10 +817,10 @@
         "country": "Netherlands",
         "dxbPriceAED": 0,
         "auhPriceAED": 0,
-        "dxbDeltaAED": -2645,
-        "auhDeltaAED": -2570,
-        "dxbDepart": "2026-03-14T12:00+04:00",
-        "auhDepart": "2026-03-14T14:00+04:00",
+        "dxbDeltaAED": 0,
+        "auhDeltaAED": 0,
+        "dxbDepart": "2026-03-15T12:00+04:00",
+        "auhDepart": "2026-03-15T14:00+04:00",
         "airline": "Various"
       },
       {
@@ -829,10 +829,10 @@
         "country": "France",
         "dxbPriceAED": 0,
         "auhPriceAED": 0,
-        "dxbDeltaAED": -2755,
-        "auhDeltaAED": -2680,
-        "dxbDepart": "2026-03-14T12:00+04:00",
-        "auhDepart": "2026-03-14T14:00+04:00",
+        "dxbDeltaAED": 0,
+        "auhDeltaAED": 0,
+        "dxbDepart": "2026-03-15T12:00+04:00",
+        "auhDepart": "2026-03-15T14:00+04:00",
         "airline": "Various"
       },
       {
@@ -841,10 +841,10 @@
         "country": "Italy",
         "dxbPriceAED": 0,
         "auhPriceAED": 0,
-        "dxbDeltaAED": -2865,
-        "auhDeltaAED": -2755,
-        "dxbDepart": "2026-03-14T12:00+04:00",
-        "auhDepart": "2026-03-14T14:00+04:00",
+        "dxbDeltaAED": 0,
+        "auhDeltaAED": 0,
+        "dxbDepart": "2026-03-15T12:00+04:00",
+        "auhDepart": "2026-03-15T14:00+04:00",
         "airline": "Various"
       },
       {
@@ -853,10 +853,10 @@
         "country": "United Kingdom",
         "dxbPriceAED": 0,
         "auhPriceAED": 0,
-        "dxbDeltaAED": -3120,
-        "auhDeltaAED": -3010,
-        "dxbDepart": "2026-03-14T12:00+04:00",
-        "auhDepart": "2026-03-14T14:00+04:00",
+        "dxbDeltaAED": 0,
+        "auhDeltaAED": 0,
+        "dxbDepart": "2026-03-15T12:00+04:00",
+        "auhDepart": "2026-03-15T14:00+04:00",
         "airline": "Various"
       },
       {
@@ -865,10 +865,10 @@
         "country": "Portugal",
         "dxbPriceAED": 0,
         "auhPriceAED": 0,
-        "dxbDeltaAED": -3380,
-        "auhDeltaAED": -3270,
-        "dxbDepart": "2026-03-14T12:00+04:00",
-        "auhDepart": "2026-03-14T14:00+04:00",
+        "dxbDeltaAED": 0,
+        "auhDeltaAED": 0,
+        "dxbDepart": "2026-03-15T12:00+04:00",
+        "auhDepart": "2026-03-15T14:00+04:00",
         "airline": "Various"
       },
       {
@@ -877,10 +877,10 @@
         "country": "Brazil",
         "dxbPriceAED": 0,
         "auhPriceAED": 0,
-        "dxbDeltaAED": -4225,
-        "auhDeltaAED": -4335,
-        "dxbDepart": "2026-03-14T12:00+04:00",
-        "auhDepart": "2026-03-14T14:00+04:00",
+        "dxbDeltaAED": 0,
+        "auhDeltaAED": 0,
+        "dxbDepart": "2026-03-15T12:00+04:00",
+        "auhDepart": "2026-03-15T14:00+04:00",
         "airline": "Various"
       },
       {
@@ -889,10 +889,10 @@
         "country": "Brazil",
         "dxbPriceAED": 0,
         "auhPriceAED": 0,
-        "dxbDeltaAED": -4410,
-        "auhDeltaAED": -4225,
-        "dxbDepart": "2026-03-14T12:00+04:00",
-        "auhDepart": "2026-03-14T14:00+04:00",
+        "dxbDeltaAED": 0,
+        "auhDeltaAED": 0,
+        "dxbDepart": "2026-03-15T12:00+04:00",
+        "auhDepart": "2026-03-15T14:00+04:00",
         "airline": "Various"
       },
       {
@@ -901,10 +901,10 @@
         "country": "Turkey",
         "dxbPriceAED": 0,
         "auhPriceAED": 0,
-        "dxbDeltaAED": -1835,
-        "auhDeltaAED": -1910,
-        "dxbDepart": "2026-03-14T12:00+04:00",
-        "auhDepart": "2026-03-14T14:00+04:00",
+        "dxbDeltaAED": 0,
+        "auhDeltaAED": 0,
+        "dxbDepart": "2026-03-15T12:00+04:00",
+        "auhDepart": "2026-03-15T14:00+04:00",
         "airline": "Various"
       },
       {
@@ -913,10 +913,10 @@
         "country": "India",
         "dxbPriceAED": 0,
         "auhPriceAED": 0,
-        "dxbDeltaAED": -920,
-        "auhDeltaAED": -990,
-        "dxbDepart": "2026-03-14T12:00+04:00",
-        "auhDepart": "2026-03-14T14:00+04:00",
+        "dxbDeltaAED": 0,
+        "auhDeltaAED": 0,
+        "dxbDepart": "2026-03-15T12:00+04:00",
+        "auhDepart": "2026-03-15T14:00+04:00",
         "airline": "Various"
       },
       {
@@ -925,10 +925,10 @@
         "country": "Egypt",
         "dxbPriceAED": 0,
         "auhPriceAED": 0,
-        "dxbDeltaAED": -1285,
-        "auhDeltaAED": -1210,
-        "dxbDepart": "2026-03-14T12:00+04:00",
-        "auhDepart": "2026-03-14T14:00+04:00",
+        "dxbDeltaAED": 0,
+        "auhDeltaAED": 0,
+        "dxbDepart": "2026-03-15T12:00+04:00",
+        "auhDepart": "2026-03-15T14:00+04:00",
         "airline": "Various"
       },
       {
@@ -937,10 +937,10 @@
         "country": "Kenya",
         "dxbPriceAED": 0,
         "auhPriceAED": 0,
-        "dxbDeltaAED": -1650,
-        "auhDeltaAED": -1760,
-        "dxbDepart": "2026-03-14T12:00+04:00",
-        "auhDepart": "2026-03-14T14:00+04:00",
+        "dxbDeltaAED": 0,
+        "auhDeltaAED": 0,
+        "dxbDepart": "2026-03-15T12:00+04:00",
+        "auhDepart": "2026-03-15T14:00+04:00",
         "airline": "Various"
       }
     ]
