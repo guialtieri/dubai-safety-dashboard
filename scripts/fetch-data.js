@@ -61,23 +61,28 @@ const RELOCATION_DESTINATIONS = [
   { destination: 'Khor Fakkan', emirate: 'Sharjah', lat: 25.3459, lng: 56.3512 }
 ];
 
+// Fallback API Hosts
+const FLIGHT_BACKUP_HOST = 'sky-scrapper.p.rapidapi.com';
+const HOTEL_BACKUP_HOST = 'priceline-com-provider.p.rapidapi.com';
+
 // ── API Helpers ─────────────────────────────────────────
 
-async function rapidApiGet(endpoint, params = {}) {
-  const url = new URL(`https://${RAPIDAPI_HOST}${endpoint}`);
+async function rapidApiGet(endpoint, params = {}, overrideHost = null) {
+  const host = overrideHost || RAPIDAPI_HOST;
+  const url = new URL(`https://${host}${endpoint}`);
   Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v));
 
   const res = await fetch(url.toString(), {
     method: 'GET',
     headers: {
       'x-rapidapi-key': RAPIDAPI_KEY,
-      'x-rapidapi-host': RAPIDAPI_HOST,
+      'x-rapidapi-host': host,
       'Content-Type': 'application/json'
     }
   });
 
   if (!res.ok) {
-    console.warn(`API ${endpoint} returned ${res.status}: ${res.statusText}`);
+    console.warn(`API ${endpoint} (Host: ${host}) returned ${res.status}: ${res.statusText}`);
     return null;
   }
   return res.json();
@@ -88,6 +93,32 @@ function sleep(ms) {
 }
 
 // ── Flight Fetching ─────────────────────────────────────
+
+async function fetchFlightBackup(originCode, destCode, departDate) {
+  try {
+    console.log(`      [Backup] Trying Sky Scrapper for ${originCode}→${destCode}`);
+    const data = await rapidApiGet('/api/v1/flights/searchFlights', {
+      originSkyId: originCode,
+      destinationSkyId: destCode,
+      date: departDate,
+      adults: 1,
+      currency: 'AED',
+      sortBy: 'price_low'
+    }, FLIGHT_BACKUP_HOST);
+
+    // Sky Scrapper specific JSON path
+    if (data?.data?.itineraries?.[0]) {
+      const it = data.data.itineraries[0];
+      const price = Math.round(it.price?.raw || 0);
+      const depart = it.legs?.[0]?.departure || `${departDate}T12:00+04:00`;
+      const airline = it.legs?.[0]?.carriers?.marketing?.[0]?.name || 'Various';
+      return { price, depart, airline };
+    }
+  } catch (e) {
+    console.warn(`      [Backup] Sky Scrapper failed:`, e.message);
+  }
+  return null;
+}
 
 async function fetchFlights() {
   const today = new Date();
@@ -126,6 +157,16 @@ async function fetchFlights() {
       console.warn(`    DXB→${dest.code} error:`, e.message);
     }
 
+    // DXB Backup
+    if (!dxbPrice) {
+      const backup = await fetchFlightBackup('DXB', dest.code, departDate);
+      if (backup) {
+        dxbPrice = backup.price;
+        dxbDepart = backup.depart;
+        airline = backup.airline;
+      }
+    }
+
     await sleep(300); // Rate limiting
 
     // AUH → dest
@@ -149,6 +190,17 @@ async function fetchFlights() {
       console.warn(`    AUH→${dest.code} error:`, e.message);
     }
 
+    // AUH Backup
+    if (!auhPrice) {
+      const backup = await fetchFlightBackup('AUH', dest.code, departDate);
+      if (backup) {
+        auhPrice = backup.price;
+        auhDepart = backup.depart;
+        // Keep airline from DXB if found, else use AUH
+        airline = (airline !== 'Various') ? airline : backup.airline;
+      }
+    }
+
     await sleep(300); // Rate limiting
 
     flights.push({
@@ -169,6 +221,41 @@ async function fetchFlights() {
 }
 
 // ── Hotel Fetching ──────────────────────────────────────
+
+async function fetchHotelBackup(lat, lng, checkin, checkout) {
+  try {
+    console.log(`      [Backup] Trying Priceline for ${lat},${lng}`);
+    // Priceline requires city ID, but has a geosearch. We will use a region approximation.
+    // For simplicity in this backup, we assume a standard flat rate calculation if Priceline
+    // exact match isn't immediate, but let's try calling their v1/hotels/search
+    const data = await rapidApiGet('/v1/hotels/search', {
+      latitude: lat,
+      longitude: lng,
+      date_checkin: checkin,
+      date_checkout: checkout,
+      rooms: 1,
+      adults: 2
+    }, HOTEL_BACKUP_HOST);
+
+    if (data?.hotels?.length > 0) {
+      let totalPrice = 0;
+      let count = 0;
+      for (const h of data.hotels) {
+        if (h.ratesSummary?.minPrice) {
+          totalPrice += parseFloat(h.ratesSummary.minPrice);
+          count++;
+        }
+      }
+      return {
+        avgPrice: count > 0 ? Math.round(totalPrice / count) : 1000,
+        availPct: Math.round((data.hotels.length / Math.max(1, data.totalHotels || data.hotels.length)) * 100)
+      };
+    }
+  } catch (e) {
+    console.warn(`      [Backup] Priceline failed:`, e.message);
+  }
+  return null;
+}
 
 async function fetchHotels() {
   const today = new Date();
@@ -217,13 +304,24 @@ async function fetchHotels() {
         }
       }
 
-      const availPct = totalHotels > 0
-        ? Math.round((availableHotels / totalHotels) * 100)
-        : 50; // fallback
+      let availPct = 50;
+      let avgPrice = 0;
 
-      const avgPrice = priceCount > 0
-        ? Math.round(totalPrice / priceCount)
-        : 1000; // fallback
+      if (totalHotels > 0 && priceCount > 0) {
+        availPct = Math.round((availableHotels / totalHotels) * 100);
+        avgPrice = Math.round(totalPrice / priceCount);
+      } else {
+        // Main API returned 0 viable hotels, trigger backup
+        const backup = await fetchHotelBackup(dest.lat, dest.lng, checkin, checkout);
+        if (backup) {
+          availPct = backup.availPct;
+          avgPrice = backup.avgPrice;
+        } else {
+          // Absolute explicit fallback
+          availPct = 50;
+          avgPrice = 1000;
+        }
+      }
 
       results.push({
         destination: dest.destination,
@@ -233,19 +331,29 @@ async function fetchHotels() {
         availabilityPct: availPct,
         availabilityYesterday: 0, // Will be filled from previous day's data
         avgPriceAED: avgPrice,
-        notes: ''
+        notes: (avgPrice === 1000) ? 'API Error — using fallback data' : ''
       });
     } catch (e) {
       console.warn(`    ${dest.destination} error:`, e.message);
+      
+      // Attempt backup on catch error
+      let availPct = 50;
+      let avgPrice = 1000;
+      const backup = await fetchHotelBackup(dest.lat, dest.lng, checkin, checkout);
+      if (backup) {
+        availPct = backup.availPct;
+        avgPrice = backup.avgPrice;
+      }
+
       results.push({
         destination: dest.destination,
         emirate: dest.emirate,
         lat: dest.lat,
         lng: dest.lng,
-        availabilityPct: 50,
+        availabilityPct: availPct,
         availabilityYesterday: 50,
-        avgPriceAED: 1000,
-        notes: 'API Error — using fallback data'
+        avgPriceAED: avgPrice,
+        notes: (avgPrice === 1000) ? 'API Error — using fallback data' : 'Sourced from backup API'
       });
     }
 
