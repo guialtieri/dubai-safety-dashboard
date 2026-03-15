@@ -1,5 +1,6 @@
+
 {
-  "lastUpdated": "2026-03-15T00:27:20.776Z",
+  "lastUpdated": "2026-03-15T01:15:32.259Z",
   "nationalSafetyScore": {
     "overall": 72,
     "dayOverDay": 2,
@@ -720,40 +721,40 @@
         "emirate": "Abu Dhabi",
         "lat": 24.2075,
         "lng": 55.7447,
-        "availabilityPct": 50,
+        "availabilityPct": 81,
         "availabilityYesterday": 50,
-        "avgPriceAED": 1000,
-        "notes": "API Error — using fallback data"
+        "avgPriceAED": 322,
+        "notes": "Estimated (mid tier) — APIs quota-limited"
       },
       {
         "destination": "Hatta",
         "emirate": "Dubai",
         "lat": 24.7953,
         "lng": 56.1097,
-        "availabilityPct": 50,
+        "availabilityPct": 51,
         "availabilityYesterday": 50,
-        "avgPriceAED": 1000,
-        "notes": "API Error — using fallback data"
+        "avgPriceAED": 283,
+        "notes": "Estimated (budget tier) — APIs quota-limited"
       },
       {
         "destination": "Dibba (Fujairah)",
         "emirate": "Fujairah",
         "lat": 25.6189,
         "lng": 56.2631,
-        "availabilityPct": 50,
+        "availabilityPct": 61,
         "availabilityYesterday": 50,
-        "avgPriceAED": 1000,
-        "notes": "API Error — using fallback data"
+        "avgPriceAED": 304,
+        "notes": "Estimated (budget tier) — APIs quota-limited"
       },
       {
         "destination": "Ras Al Khaimah City",
         "emirate": "RAK",
         "lat": 25.7895,
         "lng": 55.9432,
-        "availabilityPct": 50,
+        "availabilityPct": 67,
         "availabilityYesterday": 50,
-        "avgPriceAED": 1000,
-        "notes": "API Error — using fallback data"
+        "avgPriceAED": 322,
+        "notes": "Estimated (mid tier) — APIs quota-limited"
       },
       {
         "destination": "Ajman City",
@@ -762,28 +763,28 @@
         "lng": 55.5136,
         "availabilityPct": 50,
         "availabilityYesterday": 50,
-        "avgPriceAED": 1000,
-        "notes": "API Error — using fallback data"
+        "avgPriceAED": 503,
+        "notes": "Estimated (mid tier) — APIs quota-limited"
       },
       {
         "destination": "Fujairah City",
         "emirate": "Fujairah",
         "lat": 25.1288,
         "lng": 56.3264,
-        "availabilityPct": 50,
+        "availabilityPct": 43,
         "availabilityYesterday": 50,
-        "avgPriceAED": 1000,
-        "notes": "API Error — using fallback data"
+        "avgPriceAED": 450,
+        "notes": "Estimated (mid tier) — APIs quota-limited"
       },
       {
         "destination": "Khor Fakkan",
         "emirate": "Sharjah",
         "lat": 25.3459,
         "lng": 56.3512,
-        "availabilityPct": 50,
+        "availabilityPct": 46,
         "availabilityYesterday": 50,
-        "avgPriceAED": 1000,
-        "notes": "API Error — using fallback data"
+        "avgPriceAED": 213,
+        "notes": "Estimated (budget tier) — APIs quota-limited"
       }
     ],
     "flights": [
@@ -791,157 +792,170 @@
         "city": "Muscat",
         "code": "MCT",
         "country": "Oman",
-        "dxbPriceAED": 0,
-        "auhPriceAED": 0,
+        "dxbPriceAED": 363,
+        "auhPriceAED": 6792,
         "dxbDeltaAED": 0,
         "auhDeltaAED": 0,
         "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T14:00+04:00",
-        "airline": "Various"
+        "auhDepart": "2026-03-15T12:00+04:00",
+        "airline": "Various",
+        "source": "Estimated"
       },
       {
         "city": "Frankfurt",
         "code": "FRA",
         "country": "Germany",
-        "dxbPriceAED": 0,
-        "auhPriceAED": 0,
+        "dxbPriceAED": 2112,
+        "auhPriceAED": 3441,
         "dxbDeltaAED": 0,
         "auhDeltaAED": 0,
         "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T14:00+04:00",
-        "airline": "Various"
+        "auhDepart": "2026-03-15T12:00+04:00",
+        "airline": "Various",
+        "source": "Priceline"
       },
       {
         "city": "Amsterdam",
         "code": "AMS",
         "country": "Netherlands",
-        "dxbPriceAED": 0,
-        "auhPriceAED": 0,
+        "dxbPriceAED": 2512,
+        "auhPriceAED": 6298,
         "dxbDeltaAED": 0,
         "auhDeltaAED": 0,
         "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T14:00+04:00",
-        "airline": "Various"
+        "auhDepart": "2026-03-15T12:00+04:00",
+        "airline": "Various",
+        "source": "Priceline"
       },
       {
         "city": "Paris",
         "code": "CDG",
         "country": "France",
-        "dxbPriceAED": 0,
-        "auhPriceAED": 0,
+        "dxbPriceAED": 2461,
+        "auhPriceAED": 4623,
         "dxbDeltaAED": 0,
         "auhDeltaAED": 0,
         "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T14:00+04:00",
-        "airline": "Various"
+        "auhDepart": "2026-03-15T12:00+04:00",
+        "airline": "Various",
+        "source": "Priceline"
       },
       {
         "city": "Rome",
         "code": "FCO",
         "country": "Italy",
-        "dxbPriceAED": 0,
-        "auhPriceAED": 0,
+        "dxbPriceAED": 3312,
+        "auhPriceAED": 7089,
         "dxbDeltaAED": 0,
         "auhDeltaAED": 0,
         "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T14:00+04:00",
-        "airline": "Various"
+        "auhDepart": "2026-03-15T12:00+04:00",
+        "airline": "Various",
+        "source": "Priceline"
       },
       {
         "city": "London",
         "code": "LHR",
         "country": "United Kingdom",
-        "dxbPriceAED": 0,
-        "auhPriceAED": 0,
+        "dxbPriceAED": 3629,
+        "auhPriceAED": 1875,
         "dxbDeltaAED": 0,
         "auhDeltaAED": 0,
         "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T14:00+04:00",
-        "airline": "Various"
+        "auhDepart": "2026-03-15T12:00+04:00",
+        "airline": "Various",
+        "source": "Priceline"
       },
       {
         "city": "Lisbon",
         "code": "LIS",
         "country": "Portugal",
-        "dxbPriceAED": 0,
-        "auhPriceAED": 0,
+        "dxbPriceAED": 3549,
+        "auhPriceAED": 4093,
         "dxbDeltaAED": 0,
         "auhDeltaAED": 0,
         "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T14:00+04:00",
-        "airline": "Various"
+        "auhDepart": "2026-03-15T12:00+04:00",
+        "airline": "Various",
+        "source": "Priceline"
       },
       {
         "city": "Rio de Janeiro",
         "code": "GIG",
         "country": "Brazil",
-        "dxbPriceAED": 0,
-        "auhPriceAED": 0,
+        "dxbPriceAED": 5095,
+        "auhPriceAED": 6382,
         "dxbDeltaAED": 0,
         "auhDeltaAED": 0,
         "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T14:00+04:00",
-        "airline": "Various"
+        "auhDepart": "2026-03-15T12:00+04:00",
+        "airline": "Various",
+        "source": "Priceline"
       },
       {
         "city": "São Paulo",
         "code": "GRU",
         "country": "Brazil",
-        "dxbPriceAED": 0,
-        "auhPriceAED": 0,
+        "dxbPriceAED": 4688,
+        "auhPriceAED": 8500,
         "dxbDeltaAED": 0,
         "auhDeltaAED": 0,
         "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T14:00+04:00",
-        "airline": "Various"
+        "auhDepart": "2026-03-15T12:00+04:00",
+        "airline": "Various",
+        "source": "Priceline"
       },
       {
         "city": "Istanbul",
         "code": "IST",
         "country": "Turkey",
-        "dxbPriceAED": 0,
-        "auhPriceAED": 0,
+        "dxbPriceAED": 1089,
+        "auhPriceAED": 2751,
         "dxbDeltaAED": 0,
         "auhDeltaAED": 0,
         "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T14:00+04:00",
-        "airline": "Various"
+        "auhDepart": "2026-03-15T12:00+04:00",
+        "airline": "Various",
+        "source": "Estimated"
       },
       {
         "city": "Mumbai",
         "code": "BOM",
         "country": "India",
-        "dxbPriceAED": 0,
-        "auhPriceAED": 0,
+        "dxbPriceAED": 1985,
+        "auhPriceAED": 1645,
         "dxbDeltaAED": 0,
         "auhDeltaAED": 0,
         "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T14:00+04:00",
-        "airline": "Various"
+        "auhDepart": "2026-03-15T12:00+04:00",
+        "airline": "Various",
+        "source": "Priceline"
       },
       {
         "city": "Cairo",
         "code": "CAI",
         "country": "Egypt",
-        "dxbPriceAED": 0,
-        "auhPriceAED": 0,
+        "dxbPriceAED": 1995,
+        "auhPriceAED": 1779,
         "dxbDeltaAED": 0,
         "auhDeltaAED": 0,
         "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T14:00+04:00",
-        "airline": "Various"
+        "auhDepart": "2026-03-15T12:00+04:00",
+        "airline": "Various",
+        "source": "Priceline"
       },
       {
         "city": "Nairobi",
         "code": "NBO",
         "country": "Kenya",
-        "dxbPriceAED": 0,
-        "auhPriceAED": 0,
+        "dxbPriceAED": 2578,
+        "auhPriceAED": 8043,
         "dxbDeltaAED": 0,
         "auhDeltaAED": 0,
         "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T14:00+04:00",
-        "airline": "Various"
+        "auhDepart": "2026-03-15T12:00+04:00",
+        "airline": "Various",
+        "source": "Priceline"
       }
     ]
   },
