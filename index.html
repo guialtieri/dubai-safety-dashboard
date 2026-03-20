@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Geopolitical Safety & Logistics Dashboard for Dubai residents — real-time safety metrics, evacuation logistics, and infrastructure monitoring.">
   <title>Dubai Safety Dashboard — Geopolitical Safety & Logistics</title>
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" integrity="sha384-vsrfeLOOY6KuIYKDlmVH5UiBmgIdB1oEf7p01YgWHuqmOHfZr374+odEv96n9tNC" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -175,18 +175,20 @@
             <h3>Stay in UAE — Relocate to a Safer Area</h3>
           </div>
           <p class="evac-section-desc">Hotel availability in safer domestic destinations further from strategic targets.</p>
-          <table class="data-table" id="internalTable">
-            <thead>
-              <tr>
-                <th>Destination</th>
-                <th>Emirate</th>
-                <th>Distance</th>
-                <th>Availability</th>
-                <th>Avg. Price/Night</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
+          <div style="overflow-x:auto;">
+            <table class="data-table" id="internalTable">
+              <thead>
+                <tr>
+                  <th>Destination</th>
+                  <th>Emirate</th>
+                  <th>Distance</th>
+                  <th>Availability</th>
+                  <th>Avg. Price/Night</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
         </div>
 
         <!-- International Flights -->
@@ -301,7 +303,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=2"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>
-

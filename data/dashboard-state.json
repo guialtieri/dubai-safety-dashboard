@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-03-20T07:12:11.250404Z",
+  "lastUpdated": "2026-03-20T16:01:27.673500Z",
   "nationalSafetyScore": {
-    "overall": 58,
-    "dayOverDay": -4,
+    "overall": 67,
+    "dayOverDay": 5,
     "components": {
-      "kinetic": 52,
-      "infrastructure": 55,
-      "diplomatic": 50,
-      "economic": 60,
-      "social": 72
+      "kinetic": 68,
+      "infrastructure": 81,
+      "diplomatic": 45,
+      "economic": 58,
+      "social": 80
     }
   },
-  "dailyBriefing": "On March 20 (Eid al-Fitr), UAE air defences successfully intercepted all incoming Iranian ballistic missiles and drones in early-morning waves, with no injuries reported in Dubai. Debris from interceptions caused a limited fire at Jebel Ali Port (contained by 07:40) and struck the facade of a building near the DIFC/Business Bay corridor; Abu Dhabi's Habshan gas facilities were shut down after debris from intercepted missiles caused incidents at the site. Schools remain closed for in-person learning through March 31 under KHDA guidance, with distance learning continuing; supermarket shelves remain adequately stocked though Lulu and others are air-freighting produce to compensate for Hormuz disruptions, and fuel stations are operational with no shortages reported in Dubai.",
+  "dailyBriefing": "On March 20 (Eid al-Fitr), UAE air defences successfully intercepted all incoming Iranian ballistic missiles and drones in early-morning waves, with no injuries reported in Dubai. Debris from interceptions caused a limited fire at Jebel Ali Port (contained by 07:40) and struck the facade of a building near the DIFC/Business Bay corridor; Abu Dhabi's Habshan gas facilities were shut down after debris from intercepted missiles caused incidents at the site. The UAE government's official stance remains normal life \u2014 residents were advised to resume activities after each resolved alert. No embassy departure advisories issued. Supermarket shelves remain stocked though major chains are air-freighting produce to compensate for Hormuz disruptions; fuel stations fully operational.",
   "kineticData": {
     "national": {
       "interceptRate": [
@@ -176,7 +176,7 @@
           0,
           1
         ],
-        "localScore": 54,
+        "localScore": 63,
         "status": "caution"
       },
       "Marina": {
@@ -199,8 +199,8 @@
           1,
           1
         ],
-        "localScore": 42,
-        "status": "warning"
+        "localScore": 51,
+        "status": "caution"
       },
       "Jebel Ali": {
         "debrisIncidents": [
@@ -222,8 +222,8 @@
           2,
           3
         ],
-        "localScore": 18,
-        "status": "critical"
+        "localScore": 27,
+        "status": "warning"
       },
       "DIFC": {
         "debrisIncidents": [
@@ -245,8 +245,8 @@
           0,
           2
         ],
-        "localScore": 46,
-        "status": "warning"
+        "localScore": 55,
+        "status": "caution"
       },
       "JBR": {
         "debrisIncidents": [
@@ -268,8 +268,8 @@
           1,
           1
         ],
-        "localScore": 42,
-        "status": "warning"
+        "localScore": 51,
+        "status": "caution"
       },
       "Al Barsha": {
         "debrisIncidents": [
@@ -291,7 +291,7 @@
           0,
           0
         ],
-        "localScore": 58,
+        "localScore": 67,
         "status": "caution"
       },
       "Silicon Oasis": {
@@ -314,7 +314,7 @@
           0,
           0
         ],
-        "localScore": 58,
+        "localScore": 67,
         "status": "caution"
       },
       "Palm Jumeirah": {
@@ -337,8 +337,8 @@
           0,
           2
         ],
-        "localScore": 46,
-        "status": "warning"
+        "localScore": 55,
+        "status": "caution"
       },
       "Al Furjan": {
         "debrisIncidents": [
@@ -360,7 +360,7 @@
           0,
           1
         ],
-        "localScore": 50,
+        "localScore": 59,
         "status": "caution"
       },
       "JVC": {
@@ -383,7 +383,7 @@
           0,
           0
         ],
-        "localScore": 58,
+        "localScore": 67,
         "status": "caution"
       },
       "Business Bay": {
@@ -406,8 +406,8 @@
           0,
           2
         ],
-        "localScore": 46,
-        "status": "warning"
+        "localScore": 55,
+        "status": "caution"
       },
       "Deira": {
         "debrisIncidents": [
@@ -429,7 +429,7 @@
           0,
           0
         ],
-        "localScore": 58,
+        "localScore": 67,
         "status": "caution"
       },
       "Bur Dubai": {
@@ -452,7 +452,7 @@
           0,
           0
         ],
-        "localScore": 58,
+        "localScore": 67,
         "status": "caution"
       },
       "Al Quoz": {
@@ -475,7 +475,7 @@
           0,
           0
         ],
-        "localScore": 54,
+        "localScore": 63,
         "status": "caution"
       },
       "International City": {
@@ -498,7 +498,7 @@
           0,
           0
         ],
-        "localScore": 58,
+        "localScore": 67,
         "status": "caution"
       },
       "Mirdif": {
@@ -521,7 +521,7 @@
           0,
           0
         ],
-        "localScore": 58,
+        "localScore": 67,
         "status": "caution"
       },
       "Dubai Hills": {
@@ -544,7 +544,7 @@
           0,
           0
         ],
-        "localScore": 58,
+        "localScore": 67,
         "status": "caution"
       },
       "Jumeirah": {
@@ -567,7 +567,7 @@
           0,
           0
         ],
-        "localScore": 54,
+        "localScore": 63,
         "status": "caution"
       },
       "Arabian Ranches": {
@@ -590,7 +590,76 @@
           0,
           0
         ],
-        "localScore": 58,
+        "localScore": 67,
+        "status": "caution"
+      },
+      "Jumeirah Islands": {
+        "debrisIncidents": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "localScore": 67,
+        "status": "caution"
+      },
+      "Fujairah": {
+        "debrisIncidents": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "localScore": 67,
+        "status": "caution"
+      },
+      "Al Aqqah": {
+        "debrisIncidents": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "localScore": 67,
         "status": "caution"
       }
     },
@@ -690,6 +759,18 @@
     "Arabian Ranches": {
       "lat": 25.058,
       "lng": 55.27
+    },
+    "Jumeirah Islands": {
+      "lat": 25.0619,
+      "lng": 55.1538
+    },
+    "Fujairah": {
+      "lat": 25.1288,
+      "lng": 56.3264
+    },
+    "Al Aqqah": {
+      "lat": 25.4936,
+      "lng": 56.3536
     }
   },
   "strategicTargets": [
@@ -732,7 +813,7 @@
     },
     "supermarketStock": {
       "status": "caution",
-      "label": "Adequate — Air Freight Supplement",
+      "label": "Adequate \u2014 Air Freight Supplement",
       "guidance": "Major chains (Carrefour, Lulu, Spinneys) remain stocked. Lulu has air-freighted 160+ tons of produce this month to offset Hormuz shipping disruptions. Prices rising on some imported goods."
     },
     "fuelAvailability": {
@@ -751,7 +832,7 @@
         "availabilityPct": 81,
         "availabilityYesterday": 50,
         "avgPriceAED": 322,
-        "notes": "Estimated (mid tier) — APIs quota-limited"
+        "notes": "Estimated (mid tier) \u2014 APIs quota-limited"
       },
       {
         "destination": "Hatta",
@@ -761,7 +842,7 @@
         "availabilityPct": 51,
         "availabilityYesterday": 50,
         "avgPriceAED": 283,
-        "notes": "Estimated (budget tier) — APIs quota-limited"
+        "notes": "Estimated (budget tier) \u2014 APIs quota-limited"
       },
       {
         "destination": "Dibba (Fujairah)",
@@ -771,7 +852,7 @@
         "availabilityPct": 61,
         "availabilityYesterday": 50,
         "avgPriceAED": 304,
-        "notes": "Estimated (budget tier) — APIs quota-limited"
+        "notes": "Estimated (budget tier) \u2014 APIs quota-limited"
       },
       {
         "destination": "Ras Al Khaimah City",
@@ -781,7 +862,7 @@
         "availabilityPct": 67,
         "availabilityYesterday": 50,
         "avgPriceAED": 322,
-        "notes": "Estimated (mid tier) — APIs quota-limited"
+        "notes": "Estimated (mid tier) \u2014 APIs quota-limited"
       },
       {
         "destination": "Ajman City",
@@ -791,7 +872,7 @@
         "availabilityPct": 50,
         "availabilityYesterday": 50,
         "avgPriceAED": 503,
-        "notes": "Estimated (mid tier) — APIs quota-limited"
+        "notes": "Estimated (mid tier) \u2014 APIs quota-limited"
       },
       {
         "destination": "Fujairah City",
@@ -801,7 +882,7 @@
         "availabilityPct": 43,
         "availabilityYesterday": 50,
         "avgPriceAED": 450,
-        "notes": "Estimated (mid tier) — APIs quota-limited"
+        "notes": "Estimated (mid tier) \u2014 APIs quota-limited"
       },
       {
         "destination": "Khor Fakkan",
@@ -811,7 +892,7 @@
         "availabilityPct": 46,
         "availabilityYesterday": 50,
         "avgPriceAED": 213,
-        "notes": "Estimated (budget tier) — APIs quota-limited"
+        "notes": "Estimated (budget tier) \u2014 APIs quota-limited"
       }
     ],
     "flights": [
@@ -920,7 +1001,7 @@
         "source": "Priceline"
       },
       {
-        "city": "São Paulo",
+        "city": "S\u00e3o Paulo",
         "code": "GRU",
         "country": "Brazil",
         "dxbPriceAED": 4688,

@@ -1,19 +1,44 @@
 {
   "_date": "2026-03-20",
-
-  "nationalSafetyScore": {
-    "overall": 58,
-    "dayOverDay": -4,
-    "components": {
-      "kinetic": 52,
-      "infrastructure": 55,
-      "diplomatic": 50,
-      "economic": 60,
-      "social": 72
+  "_scoring_notes": {
+    "kinetic_formula": "40% intercept rate (scaled 90-100% → 0-100) + 20% absolute debris penalty (100 - debris*8) + 20% day-over-day trend (100 - delta*10) + 20% 7-day avg trend (100 - delta*10)",
+    "infrastructure_formula": "Schools removed. Fuel 50% + Supermarket stock 50%",
+    "social_formula": "Base 100. Deductions: -5 per NCEMA alert in last 24h, -5 US embassy partial advisory, -5 AUH partial restriction, -10 per full embassy departure advisory, -10 per airport closure",
+    "kinetic_inputs": {
+      "todayInterceptRate": 96,
+      "todayDebris": 5,
+      "yesterdayDebris": 3,
+      "avg7DayDebris": 3.14,
+      "interceptScore": 60,
+      "absoluteDebrisScore": 60,
+      "dayOverDayTrendScore": 80,
+      "sevenDayTrendScore": 81
+    },
+    "social_inputs": {
+      "base": 100,
+      "ncemaAlerts24h": 2,
+      "alertPenalty": -10,
+      "usEmbassyPartialAdvisory": -5,
+      "auhPartialRestriction": -5,
+      "brazilEmbassyAdvisory": 0,
+      "ukEmbassyAdvisory": 0,
+      "dxbStatus": "operational"
     }
   },
 
-  "dailyBriefing": "On March 20 (Eid al-Fitr), UAE air defences successfully intercepted all incoming Iranian ballistic missiles and drones in early-morning waves, with no injuries reported in Dubai. Debris from interceptions caused a limited fire at Jebel Ali Port (contained by 07:40) and struck the facade of a building near the DIFC/Business Bay corridor; Abu Dhabi's Habshan gas facilities were shut down after debris from intercepted missiles caused incidents at the site. Schools remain closed for in-person learning through March 31 under KHDA guidance, with distance learning continuing; supermarket shelves remain adequately stocked though Lulu and others are air-freighting produce to compensate for Hormuz disruptions, and fuel stations are operational with no shortages reported in Dubai.",
+  "nationalSafetyScore": {
+    "overall": 67,
+    "dayOverDay": 5,
+    "components": {
+      "kinetic": 68,
+      "infrastructure": 81,
+      "diplomatic": 45,
+      "economic": 58,
+      "social": 80
+    }
+  },
+
+  "dailyBriefing": "On March 20 (Eid al-Fitr), UAE air defences successfully intercepted all incoming Iranian ballistic missiles and drones in early-morning waves, with no injuries reported in Dubai. Debris from interceptions caused a limited fire at Jebel Ali Port (contained by 07:40) and struck the facade of a building near the DIFC/Business Bay corridor; Abu Dhabi's Habshan gas facilities were shut down after debris from intercepted missiles caused incidents at the site. The UAE government's official stance remains normal life — residents were advised to resume activities after each resolved alert. No embassy departure advisories issued. Supermarket shelves remain stocked though major chains are air-freighting produce to compensate for Hormuz disruptions; fuel stations fully operational.",
 
   "kineticData": {
     "national": {

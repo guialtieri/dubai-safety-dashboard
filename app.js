@@ -53,7 +53,7 @@
   // ---- Data ----
   async function loadData() {
     try {
-      const resp = await fetch('./data/dashboard-state.json');
+      const resp = await fetch('./data/dashboard-state.json?t=' + Date.now());
       data = await resp.json();
     } catch (e) {
       console.error('Failed to load:', e);
