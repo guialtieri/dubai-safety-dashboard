@@ -1,0 +1,66 @@
+{
+  "_date": "2026-03-20",
+
+  "nationalSafetyScore": {
+    "overall": 58,
+    "dayOverDay": -4,
+    "components": {
+      "kinetic": 52,
+      "infrastructure": 55,
+      "diplomatic": 50,
+      "economic": 60,
+      "social": 72
+    }
+  },
+
+  "dailyBriefing": "On March 20 (Eid al-Fitr), UAE air defences successfully intercepted all incoming Iranian ballistic missiles and drones in early-morning waves, with no injuries reported in Dubai. Debris from interceptions caused a limited fire at Jebel Ali Port (contained by 07:40) and struck the facade of a building near the DIFC/Business Bay corridor; Abu Dhabi's Habshan gas facilities were shut down after debris from intercepted missiles caused incidents at the site. Schools remain closed for in-person learning through March 31 under KHDA guidance, with distance learning continuing; supermarket shelves remain adequately stocked though Lulu and others are air-freighting produce to compensate for Hormuz disruptions, and fuel stations are operational with no shortages reported in Dubai.",
+
+  "kineticData": {
+    "national": {
+      "interceptRate": { "date": "2026-03-20", "value": 96 },
+      "debrisIncidents": { "date": "2026-03-20", "value": 5 }
+    },
+    "byNeighborhood": {
+      "Downtown": 1,
+      "Marina": 1,
+      "Jebel Ali": 3,
+      "DIFC": 2,
+      "JBR": 1,
+      "Al Barsha": 0,
+      "Silicon Oasis": 0,
+      "Palm Jumeirah": 2,
+      "Al Furjan": 1,
+      "JVC": 0,
+      "Business Bay": 2,
+      "Deira": 0,
+      "Bur Dubai": 0,
+      "Al Quoz": 0,
+      "International City": 0,
+      "Mirdif": 0,
+      "Dubai Hills": 0,
+      "Jumeirah": 0,
+      "Arabian Ranches": 0,
+      "Jumeirah Islands": 0,
+      "Fujairah": 0,
+      "Al Aqqah": 0
+    }
+  },
+
+  "infrastructure": {
+    "schoolClosures": {
+      "status": "warning",
+      "label": "Distance Learning Only",
+      "guidance": "All schools remain closed for in-person attendance through March 31. KHDA-regulated Dubai schools plan to reopen April 6. Online classes continue as normal."
+    },
+    "supermarketStock": {
+      "status": "caution",
+      "label": "Adequate — Air Freight Supplement",
+      "guidance": "Major chains (Carrefour, Lulu, Spinneys) remain stocked. Lulu has air-freighted 160+ tons of produce this month to offset Hormuz shipping disruptions. Prices rising on some imported goods."
+    },
+    "fuelAvailability": {
+      "status": "safe",
+      "label": "Normal Supply",
+      "guidance": "ENOC and ADNOC stations fully operational across Dubai. No queues or shortages reported. Monitor for price adjustments as global oil prices remain elevated."
+    }
+  }
+}
