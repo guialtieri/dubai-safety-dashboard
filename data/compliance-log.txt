@@ -1,0 +1,9 @@
+[2026-03-20T04:33:59.152853+00:00] COMPLIANCE LOG: Starting monitor_prices.py routine.
+[2026-03-20T04:33:59.153154+00:00] COMPLIANCE LOG: Triggering data fetch script: /Users/guiamaral/.gemini/antigravity/scratch/geo-dashboard/scripts/fetch-data.js
+[2026-03-20T04:33:59.154772+00:00] COMPLIANCE LOG: Unexpected Error: [Errno 2] No such file or directory: 'node'
+[2026-03-20T04:34:04.212373+00:00] COMPLIANCE LOG: Starting monitor_prices.py routine.
+[2026-03-20T04:34:04.212672+00:00] COMPLIANCE LOG: Triggering data fetch script: /Users/guiamaral/.gemini/antigravity/scratch/geo-dashboard/scripts/fetch-data.js
+[2026-03-20T04:34:04.214371+00:00] COMPLIANCE LOG: Unexpected Error: [Errno 2] No such file or directory: 'node'
+[2026-03-20T04:34:09.273071+00:00] COMPLIANCE LOG: Starting monitor_prices.py routine.
+[2026-03-20T04:34:09.273374+00:00] COMPLIANCE LOG: Triggering data fetch script: /Users/guiamaral/.gemini/antigravity/scratch/geo-dashboard/scripts/fetch-data.js
+[2026-03-20T04:34:09.275044+00:00] COMPLIANCE LOG: Unexpected Error: [Errno 2] No such file or directory: 'node'

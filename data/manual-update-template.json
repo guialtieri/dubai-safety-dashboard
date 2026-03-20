@@ -1,0 +1,85 @@
+{
+  "_instructions": "Manus: Fill this template daily by 08:00 GST using deep research from the sources listed below. Save the completed file as data/manual-update.json in the geo-dashboard repo. Then run: node scripts/merge-manual-data.js",
+  "_sources": [
+    "UAE National Defense Briefings",
+    "NCEMA (ncema.gov.ae)",
+    "WAM (wam.ae) — Emirates News Agency",
+    "Reuters / Al Jazeera / Gulf News for conflict updates",
+    "ADNOC / ENOC for fuel supply status",
+    "KHDA / MOE for school closure announcements",
+    "Carrefour / Lulu / Spinneys for stock levels"
+  ],
+  "_date": "YYYY-MM-DD",
+
+  "nationalSafetyScore": {
+    "overall": 72,
+    "dayOverDay": 0,
+    "components": {
+      "kinetic": 68,
+      "infrastructure": 80,
+      "diplomatic": 65,
+      "economic": 74,
+      "social": 85
+    }
+  },
+
+  "dailyBriefing": "Write a 2-3 sentence factual summary of overnight developments: intercept performance, diplomatic signals, infrastructure status.",
+
+  "kineticData": {
+    "_note": "Add ONE new entry for today's date to each array below.",
+    "national": {
+      "interceptRate": { "date": "YYYY-MM-DD", "value": 97 },
+      "debrisIncidents": { "date": "YYYY-MM-DD", "value": 3 }
+    },
+    "byNeighborhood": {
+      "_note": "Set today's debris count for each neighborhood. Use 0 if no reports.",
+      "Downtown": 0,
+      "Marina": 1,
+      "Jebel Ali": 2,
+      "DIFC": 0,
+      "JBR": 0,
+      "Al Barsha": 0,
+      "Silicon Oasis": 0,
+      "Palm Jumeirah": 0,
+      "Al Furjan": 0,
+      "JVC": 0,
+      "Business Bay": 0,
+      "Deira": 0,
+      "Bur Dubai": 0,
+      "Al Quoz": 0,
+      "International City": 0,
+      "Mirdif": 0,
+      "Dubai Hills": 0,
+      "Jumeirah": 0,
+      "Arabian Ranches": 0,
+      "Jumeirah Islands": 0,
+      "Fujairah": 0,
+      "Al Aqqah": 0
+    }
+  },
+
+  "infrastructure": {
+    "schoolClosures": {
+      "status": "normal",
+      "label": "Normal Operations",
+      "guidance": "Schools and government offices are operating on regular schedules."
+    },
+    "supermarketStock": {
+      "status": "safe",
+      "label": "Adequate Stock",
+      "guidance": "All major chains fully stocked. Normal shopping advised."
+    },
+    "fuelAvailability": {
+      "status": "safe",
+      "label": "Normal Supply",
+      "guidance": "All stations fully stocked."
+    }
+  },
+
+  "_statusOptions": {
+    "infrastructure.status": ["normal", "safe", "caution", "warning", "critical"],
+    "safetyScore.overall": "0-100 integer",
+    "interceptRate.value": "90-100 percentage",
+    "debrisIncidents.value": "0+ integer count"
+  }
+}

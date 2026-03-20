@@ -583,5 +583,51 @@
   }
 
   // ---- Boot ----
-  document.addEventListener('DOMContentLoaded', init);
+  // Original initialization function is init().
+  
+  // ──────────────────────────────────────────────────────────
+  // Password Protection Logic
+  // ──────────────────────────────────────────────────────────
+
+  const REQUIRED_PASSPHRASE = 'DubaiDash2026';
+
+  function initPasswordLock() {
+    const overlay = document.getElementById('login-overlay');
+    const mainApp = document.getElementById('app'); // Dashboard container ID is 'app'
+    const passInput = document.getElementById('password-input');
+    const submitBtn = document.getElementById('login-submit');
+    const errText = document.getElementById('login-error');
+
+    function checkPassword() {
+      const entered = passInput.value.trim();
+      if (entered === REQUIRED_PASSPHRASE) {
+        overlay.style.opacity = '0';
+        overlay.style.pointerEvents = 'none';
+        setTimeout(() => {
+          overlay.style.display = 'none';
+          mainApp.style.display = 'block'; // Show app
+          init(); // Boot the dashboard ONLY when unlocked
+        }, 300);
+      } else {
+        errText.style.display = 'block';
+        passInput.value = '';
+        passInput.focus();
+      }
+    }
+
+  submitBtn.addEventListener('click', checkPassword);
+  passInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') checkPassword();
+  });
+
+  passInput.focus();
+}
+
+// ──────────────────────────────────────────────────────────
+// Boot
+// ──────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  // Instead of initializing the app immediately, we initialize the lock
+  initPasswordLock();
+});
 })();

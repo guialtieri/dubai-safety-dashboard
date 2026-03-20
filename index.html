@@ -5,11 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Geopolitical Safety & Logistics Dashboard for Dubai residents — real-time safety metrics, evacuation logistics, and infrastructure monitoring.">
   <title>Dubai Safety Dashboard — Geopolitical Safety & Logistics</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" integrity="sha384-vsrfeLOOY6KuIYKDlmVH5UiBmgIdB1oEf7p01YgWHuqmOHfZr374+odEv96n9tNC" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="dashboard" id="app">
+  <!-- Password Protection Overlay -->
+  <div id="login-overlay" class="login-overlay">
+    <div class="login-modal">
+      <div class="login-icon">🔒</div>
+      <h2>Restricted Access</h2>
+      <p>Please enter the passphrase to view the dashboard.</p>
+      <div class="login-input-group">
+        <input type="password" id="password-input" placeholder="Enter passphrase..." aria-label="Passphrase" autocomplete="off">
+        <button id="login-submit" class="btn-login">Access</button>
+      </div>
+      <p id="login-error" class="login-error" style="display: none;">Incorrect passphrase. Please try again.</p>
+    </div>
+  </div>
+
+  <div class="dashboard" id="app" style="display: none;">
 
     <!-- ============ HEADER ============ -->
     <header class="dashboard-header">
@@ -211,6 +225,9 @@
       <p class="methodology-note">
         <strong>Methodology:</strong> The Safety Score is calculated using a weighted algorithm: Kinetic/Military (35%), Infrastructure/Logistics (25%), Diplomatic Advisories (20%), Economic/Flight pricing (10%), Social/Closures (10%). Each sub-score ranges 0–100, adjusted per neighborhood based on local debris history and target proximity. Data refreshed daily at 08:00 GST. Flight prices are indicative. This dashboard is for informational purposes only and does not replace official government advisories.
       </p>
+      <p class="methodology-note" style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-dim); border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+        <strong>Terms of Use &amp; Data Privacy:</strong> By accessing this dashboard, you agree to our Terms of Service. All data presented, including extrapolated safety metrics and monitored hotel/flight pricing, is provided "as is" with no guarantee of accuracy or real-time precision. This project actively complies with the UAE Personal Data Protection Law (PDPL) and Dubai Data Law; no personal, user-identifiable information is collected, stored, or processed by our systems. Scraping and automation tools used to gather external pricing data operate under rate-limited, read-only constraints, avoiding disruptions to third-party services.
+      </p>
     </footer>
   </div>
 
@@ -284,7 +301,7 @@
     </div>
   </div>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=2"></script>
 </body>
 </html>
 
