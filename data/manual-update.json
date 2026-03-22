@@ -1,60 +1,78 @@
 {
-  "_date": "2026-03-21",
+  "_date": "2026-03-22",
   "_scoring_notes": {
-    "kinetic_formula": "40% intercept rate (scaled 90-100% → 0-100) + 20% absolute debris penalty (100 - debris*8) + 20% day-over-day trend (100 - delta*10) + 20% 7-day avg trend (100 - delta*10)",
+    "kinetic_formula": "40% intercept rate (scaled 90-100% → 0-100pts) + 20% absolute debris penalty (100 - debris×8) + 20% day-over-day trend (100 - delta×10) + 20% 7-day avg trend (100 - delta×10)",
     "infrastructure_formula": "Schools removed. Fuel 50% + Supermarket stock 50%",
-    "social_formula": "Base 100. Deductions: -5 per NCEMA alert in last 24h, -5 US embassy partial advisory, -5 AUH partial restriction, -10 per full embassy departure advisory, -10 per airport closure",
+    "social_formula": "Base 100. Deductions: -5 per NCEMA alert in last 24h, -10 per full embassy departure/reconsider advisory, -5 per airport limited ops, -10 per airport closure",
     "kinetic_inputs": {
-      "todayInterceptRate": 100,
-      "todayDebris": 1,
-      "yesterdayDebris": 5,
-      "avg7DayDebris": 2.875,
-      "interceptScore": 100,
-      "absoluteDebrisScore": 92,
-      "dayOverDayTrendScore": 100,
-      "sevenDayTrendScore": 71.25
+      "todayInterceptRate": 96,
+      "todayDebris": 7,
+      "yesterdayDebris": 1,
+      "avg7DayDebris": 3.0,
+      "interceptScore": 60,
+      "absoluteDebrisScore": 44,
+      "dayOverDayTrendScore": 40,
+      "sevenDayTrendScore": 60
     },
     "social_inputs": {
       "base": 100,
-      "ncemaAlerts24h": 0,
-      "alertPenalty": 0,
-      "usEmbassyPartialAdvisory": 0,
-      "auhPartialRestriction": 0,
-      "brazilEmbassyAdvisory": 0,
-      "ukEmbassyAdvisory": 0,
-      "dxbStatus": "operational",
-      "emiratesReducedOps": -5
-    }
+      "ncemaAlerts24h": 2,
+      "alertPenalty": -10,
+      "usEmbassyAdvisory": "Reconsider travel to UAE",
+      "usEmbassyPenalty": -10,
+      "ukFCDOAdvisory": "Advise against all but essential travel to UAE",
+      "ukFCDOPenalty": -10,
+      "brazilEmbassyAdvisory": "No specific advisory found",
+      "brazilEmbassyPenalty": 0,
+      "dxbStatus": "Limited operations — safety windows only",
+      "dxbPenalty": -5,
+      "auhStatus": "Operational",
+      "auhPenalty": 0
+    },
+    "sources": [
+      "UAE MoD official X account — 2 alerts issued: 06:47 and 14:54 GST",
+      "Hindustan Times Dubai live blog March 22",
+      "ARN News Centre — afternoon alert confirmed",
+      "Khaleej Times — Marina tower debris confirmed, no injuries",
+      "uaeup2date Facebook — residential courtyard debris, 2 injuries",
+      "UK FCDO — advises against all but essential travel to UAE",
+      "US Embassy — reconsider travel to UAE advisory",
+      "noticias.ae — DXB operating in controlled emergency mode with safety windows",
+      "WHO — 8 killed, 158 injured in UAE since conflict start",
+      "S&P Global — Dubai real estate slowdown report",
+      "Trump 48h ultimatum to Iran on Hormuz Strait",
+      "Iran counter-threat to hit all US energy/IT/desalination infra in region"
+    ]
   },
 
   "nationalSafetyScore": {
-    "overall": 87,
-    "dayOverDay": 20,
+    "overall": 53,
+    "dayOverDay": -34,
     "components": {
-      "kinetic": 93,
-      "infrastructure": 100,
-      "diplomatic": 65,
-      "economic": 70,
-      "social": 95
+      "kinetic": 53,
+      "infrastructure": 73,
+      "diplomatic": 28,
+      "economic": 42,
+      "social": 65
     }
   },
 
-  "dailyBriefing": "On March 21, UAE air defences successfully intercepted all 4 ballistic missiles and 26 UAVs launched from Iran, achieving a 100% intercept rate. Only one minor incident was reported involving debris striking a building facade, and the overall debris count dropped significantly from the previous day. Infrastructure remains stable with supermarkets and fuel stations fully operational, while regional allies have expressed strong support for UAE security measures.",
+  "dailyBriefing": "March 22 saw a significant escalation with UAE air defences intercepting 4 ballistic missiles and 25 drones in two separate waves (06:47 and 14:54 GST). Debris struck a tower facade in Dubai Marina (no injuries), two residential courtyards in Dubai (2 injuries treated), and caused incidents near Jebel Ali Port. Dubai International Airport operated in controlled emergency mode with safety windows only. Trump issued a 48-hour ultimatum to Iran to fully open the Strait of Hormuz or face US strikes on Iranian power plants; Iran responded by threatening all US energy, IT, and desalination infrastructure in the region. The UK FCDO upgraded to 'advise against all but essential travel to UAE'; the US Embassy issued a 'reconsider travel' advisory. WHO confirmed 8 killed and 158 injured in UAE since conflict began. UAE government stance remains 'normal life between alerts' with no evacuation advisory issued.",
 
   "kineticData": {
     "national": {
-      "interceptRate": { "date": "2026-03-21", "value": 100 },
-      "debrisIncidents": { "date": "2026-03-21", "value": 1 }
+      "interceptRate": { "date": "2026-03-22", "value": 96 },
+      "debrisIncidents": { "date": "2026-03-22", "value": 7 }
     },
     "byNeighborhood": {
       "Downtown": 0,
-      "Marina": 0,
-      "Jebel Ali": 0,
-      "DIFC": 1,
-      "JBR": 0,
+      "Marina": 3,
+      "Jebel Ali": 2,
+      "DIFC": 0,
+      "JBR": 1,
       "Al Barsha": 0,
       "Silicon Oasis": 0,
-      "Palm Jumeirah": 0,
+      "Palm Jumeirah": 1,
       "Al Furjan": 0,
       "JVC": 0,
       "Business Bay": 0,
@@ -74,19 +92,19 @@
 
   "infrastructure": {
     "schoolClosures": {
-      "status": "normal",
-      "label": "Normal Operations",
-      "guidance": "Schools and government offices are operating on regular schedules."
+      "status": "warning",
+      "label": "Distance Learning Only",
+      "guidance": "All schools remain closed for in-person attendance through March 31. KHDA-regulated Dubai schools plan to reopen April 6. Online classes continue as normal."
     },
     "supermarketStock": {
-      "status": "safe",
-      "label": "Adequate Stock",
-      "guidance": "All major chains fully stocked. Normal shopping advised."
+      "status": "caution",
+      "label": "Adequate — Air Freight Supplement",
+      "guidance": "Major chains (Carrefour, Lulu, Spinneys) remain stocked. Air freight supplements continue to offset Hormuz shipping disruptions. Monitor for price increases on imported goods."
     },
     "fuelAvailability": {
-      "status": "safe",
-      "label": "Normal Supply",
-      "guidance": "All stations fully stocked."
+      "status": "caution",
+      "label": "Operational — Monitor Hormuz Impact",
+      "guidance": "ENOC and ADNOC stations operational across Dubai. No shortages reported. Hormuz restrictions continue to create upstream supply pressure; monitor for price adjustments."
     }
   }
 }
