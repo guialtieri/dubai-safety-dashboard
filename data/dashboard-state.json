@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-03-23T13:55:04.086Z",
+  "lastUpdated": "2026-03-24T12:42:51.670Z",
   "nationalSafetyScore": {
-    "overall": 78,
-    "dayOverDay": 25,
+    "overall": 68,
+    "dayOverDay": -10,
     "components": {
-      "kinetic": 98,
+      "kinetic": 91,
       "infrastructure": 81,
-      "diplomatic": 52,
-      "economic": 55,
-      "social": 80
+      "diplomatic": 30,
+      "economic": 48,
+      "social": 50
     }
   },
-  "dailyBriefing": "March 23 saw UAE air defences achieve their best single-day performance since the conflict began, intercepting all 7 ballistic missiles and 16 drones launched from Iran (100% intercept rate). Only 1 debris incident was confirmed: an Indian national sustained minor injuries in Al Shawamekh (Abu Dhabi industrial area). No Dubai neighbourhood debris was reported. Dubai Police issued a weather advisory clarifying that thunder sounds should not be confused with interceptions. DXB and AUH remain operational with weather-related delays (adverse conditions expected Mar 23-27); IndiGo has cancelled Dubai flights through April 30. Diplomatically, Trump announced a 5-day pause on strikes against Iranian energy infrastructure citing 'productive talks', though Iran's foreign ministry denied any negotiations. Iran's Defence Council threatened to mine the entire Persian Gulf if a land invasion occurs, and published target maps of Gulf power plants including the UAE nuclear plant. The US Embassy UAE maintained its Level 3 'Reconsider Travel' advisory. UAE government stance remains normal life with alerts followed as issued.",
+  "dailyBriefing": "On March 24, UAE air defences successfully intercepted all 5 ballistic missiles and 17 UAVs launched by Iran — a 100% intercept rate. Three debris incidents were reported: a fire in Deira from drone debris (contained by midday), a brief power outage in the Mirdif area, and debris near Al Quoz Industrial. The diplomatic situation deteriorated sharply as Trump's 48-hour Hormuz ultimatum expired today with Iran refusing to comply and threatening to mine all Gulf access routes and target regional power plants. Iran published target maps of UAE, Saudi, and Qatari power infrastructure. The UK FCDO upgraded its advisory to 'advise against all but essential travel' to the UAE. The US Embassy (Level 3: Reconsider Travel) has suspended all routine consular services. DXB is operating at partial capacity with Emirates and flydubai on scaled-down networks; AUH has limited long-haul services. UAE government stance remains normal life between alerts, with NCEMA issuing two alerts this morning (both resolved). Schools continue on distance learning through April 3 per KHDA extension.",
   "kineticData": {
     "national": {
       "interceptRate": [
@@ -93,6 +93,10 @@
         },
         {
           "date": "2026-03-23",
+          "value": 100
+        },
+        {
+          "date": "2026-03-24",
           "value": 100
         }
       ],
@@ -176,6 +180,10 @@
         {
           "date": "2026-03-23",
           "value": 1
+        },
+        {
+          "date": "2026-03-24",
+          "value": 3
         }
       ]
     },
@@ -201,9 +209,10 @@
           1,
           0,
           0,
+          0,
           0
         ],
-        "localScore": 74,
+        "localScore": 64,
         "status": "caution"
       },
       "Marina": {
@@ -227,9 +236,10 @@
           1,
           0,
           3,
+          0,
           0
         ],
-        "localScore": 58,
+        "localScore": 52,
         "status": "caution"
       },
       "Jebel Ali": {
@@ -253,10 +263,11 @@
           3,
           0,
           2,
+          0,
           0
         ],
-        "localScore": 50,
-        "status": "caution"
+        "localScore": 48,
+        "status": "warning"
       },
       "DIFC": {
         "debrisIncidents": [
@@ -279,9 +290,10 @@
           2,
           1,
           0,
+          0,
           0
         ],
-        "localScore": 66,
+        "localScore": 56,
         "status": "caution"
       },
       "JBR": {
@@ -305,9 +317,10 @@
           1,
           0,
           1,
+          0,
           0
         ],
-        "localScore": 66,
+        "localScore": 60,
         "status": "caution"
       },
       "Al Barsha": {
@@ -331,10 +344,11 @@
           0,
           0,
           0,
+          0,
           0
         ],
-        "localScore": 78,
-        "status": "safe"
+        "localScore": 68,
+        "status": "caution"
       },
       "Silicon Oasis": {
         "debrisIncidents": [
@@ -357,10 +371,11 @@
           0,
           0,
           0,
+          0,
           0
         ],
-        "localScore": 78,
-        "status": "safe"
+        "localScore": 68,
+        "status": "caution"
       },
       "Palm Jumeirah": {
         "debrisIncidents": [
@@ -383,9 +398,10 @@
           2,
           0,
           1,
+          0,
           0
         ],
-        "localScore": 66,
+        "localScore": 56,
         "status": "caution"
       },
       "Al Furjan": {
@@ -409,9 +425,10 @@
           1,
           0,
           0,
+          0,
           0
         ],
-        "localScore": 74,
+        "localScore": 64,
         "status": "caution"
       },
       "JVC": {
@@ -435,10 +452,11 @@
           0,
           0,
           0,
+          0,
           0
         ],
-        "localScore": 78,
-        "status": "safe"
+        "localScore": 68,
+        "status": "caution"
       },
       "Business Bay": {
         "debrisIncidents": [
@@ -461,9 +479,10 @@
           2,
           0,
           0,
+          0,
           0
         ],
-        "localScore": 70,
+        "localScore": 60,
         "status": "caution"
       },
       "Deira": {
@@ -487,10 +506,11 @@
           0,
           0,
           0,
-          0
+          0,
+          2
         ],
-        "localScore": 78,
-        "status": "safe"
+        "localScore": 60,
+        "status": "caution"
       },
       "Bur Dubai": {
         "debrisIncidents": [
@@ -513,10 +533,11 @@
           0,
           0,
           0,
+          0,
           0
         ],
-        "localScore": 78,
-        "status": "safe"
+        "localScore": 68,
+        "status": "caution"
       },
       "Al Quoz": {
         "debrisIncidents": [
@@ -539,10 +560,11 @@
           0,
           0,
           0,
-          0
+          0,
+          1
         ],
-        "localScore": 78,
-        "status": "safe"
+        "localScore": 64,
+        "status": "caution"
       },
       "International City": {
         "debrisIncidents": [
@@ -565,10 +587,11 @@
           0,
           0,
           0,
+          0,
           0
         ],
-        "localScore": 78,
-        "status": "safe"
+        "localScore": 68,
+        "status": "caution"
       },
       "Mirdif": {
         "debrisIncidents": [
@@ -591,10 +614,11 @@
           0,
           0,
           0,
-          0
+          0,
+          1
         ],
-        "localScore": 78,
-        "status": "safe"
+        "localScore": 64,
+        "status": "caution"
       },
       "Dubai Hills": {
         "debrisIncidents": [
@@ -617,10 +641,11 @@
           0,
           0,
           0,
+          0,
           0
         ],
-        "localScore": 78,
-        "status": "safe"
+        "localScore": 68,
+        "status": "caution"
       },
       "Jumeirah": {
         "debrisIncidents": [
@@ -643,10 +668,11 @@
           0,
           0,
           0,
+          0,
           0
         ],
-        "localScore": 78,
-        "status": "safe"
+        "localScore": 68,
+        "status": "caution"
       },
       "Arabian Ranches": {
         "debrisIncidents": [
@@ -669,10 +695,11 @@
           0,
           0,
           0,
+          0,
           0
         ],
-        "localScore": 78,
-        "status": "safe"
+        "localScore": 68,
+        "status": "caution"
       },
       "Jumeirah Islands": {
         "debrisIncidents": [
@@ -695,10 +722,11 @@
           0,
           0,
           0,
+          0,
           0
         ],
-        "localScore": 78,
-        "status": "safe"
+        "localScore": 68,
+        "status": "caution"
       },
       "Fujairah": {
         "debrisIncidents": [
@@ -721,10 +749,11 @@
           0,
           0,
           0,
+          0,
           0
         ],
-        "localScore": 78,
-        "status": "safe"
+        "localScore": 68,
+        "status": "caution"
       },
       "Al Aqqah": {
         "debrisIncidents": [
@@ -747,10 +776,11 @@
           0,
           0,
           0,
+          0,
           0
         ],
-        "localScore": 78,
-        "status": "safe"
+        "localScore": 68,
+        "status": "caution"
       }
     },
     "dateLabels": [
@@ -773,7 +803,8 @@
       "2026-03-20",
       "2026-03-21",
       "2026-03-22",
-      "2026-03-23"
+      "2026-03-23",
+      "2026-03-24"
     ]
   },
   "neighborhoods": {
@@ -901,18 +932,18 @@
   "infrastructure": {
     "schoolClosures": {
       "status": "warning",
-      "label": "Distance Learning Only",
-      "guidance": "Schools remain closed for in-person attendance. Universities and colleges have moved to online classes as a precautionary measure. Monitor KHDA for reopening dates."
+      "label": "Distance Learning Until April 3",
+      "guidance": "KHDA extended distance learning for all private schools in Dubai until April 3. Schools plan to reopen April 6 subject to security conditions."
     },
     "supermarketStock": {
       "status": "caution",
       "label": "Adequate — Air Freight Supplement",
-      "guidance": "Major chains (Carrefour, Lulu, Spinneys) remain stocked. Air freight supplements continue to offset Hormuz shipping disruptions. Some imported goods showing price increases."
+      "guidance": "Major chains (Carrefour, Lulu, Spinneys) remain stocked. Air-freight supplements continue for fresh produce. Prices rising on imported goods due to Hormuz disruption."
     },
     "fuelAvailability": {
       "status": "safe",
       "label": "Normal Supply",
-      "guidance": "ENOC and ADNOC stations fully operational across Dubai. No queues or shortages reported. Oil prices remain elevated globally but no local supply impact."
+      "guidance": "ENOC and ADNOC stations fully operational across Dubai. No queues or shortages reported."
     }
   },
   "evacuation": {
