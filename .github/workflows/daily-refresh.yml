@@ -24,7 +24,7 @@ jobs:
       - name: Fetch fresh data from APIs
         env:
           RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
-        run: node scripts/fetch-data.js
+        run: python3 scripts/fetch-data.py
 
       - name: Commit and push updated data
         run: |

@@ -8,7 +8,7 @@ import datetime
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_FILE = os.path.join(BASE_DIR, 'data', 'dashboard-state.json')
 LOG_FILE = os.path.join(BASE_DIR, 'data', 'compliance-log.txt')
-FETCH_SCRIPT = os.path.join(BASE_DIR, 'scripts', 'fetch-data.js')
+FETCH_SCRIPT = os.path.join(BASE_DIR, 'scripts', 'fetch-data.py')
 
 class ValidationError(Exception):
     pass
@@ -22,12 +22,10 @@ def log_compliance(message):
 
 def run_fetch_script():
     log_compliance(f"Triggering data fetch script: {FETCH_SCRIPT}")
-    # Run fetch-data.js via node
-    # Since fetch-data.js requires RAPIDAPI_KEY, we pass environment variables.
-    # Note: If no key is set, it might fail, but we'll capture its exit code.
+    # Run fetch-data.py via python3
     env = os.environ.copy()
     try:
-        result = subprocess.run(['node', FETCH_SCRIPT], env=env, capture_output=True, text=True, check=True)
+        result = subprocess.run(['python3', FETCH_SCRIPT], env=env, capture_output=True, text=True, check=True)
         log_compliance("Data fetch completed successfully.")
     except subprocess.CalledProcessError as e:
         log_compliance(f"Data fetch script failed: {e.stderr}")

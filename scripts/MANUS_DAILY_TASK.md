@@ -84,7 +84,15 @@ Use this exact structure (copy from `data/manual-update-template.json` and fill 
 ## After Saving
 Run this command to merge the data into the dashboard:
 ```bash
-node scripts/merge-manual-data.js
+python3 scripts/merge-manual-data.py
 ```
 
-This will append the new data points, recalculate neighborhood scores, and update the timestamp.
+This will append the new data points, recalculate neighborhood scores, and update the timestamp in your local workspace.
+
+**CRITICAL DEPLOYMENT STEP:**
+Because the dashboard is hosted live on GitHub Pages, you **MUST** commit and push these changes to GitHub after merging to update the live site. Run the following command:
+```bash
+git add data/dashboard-state.json data/manual-update.json
+git commit -m "chore: daily manual data update"
+git push origin main
+```
