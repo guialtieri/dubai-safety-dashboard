@@ -1,7 +1,7 @@
 # Manus Daily Research Task — Dubai Safety Dashboard
 
 ## Schedule
-Run this task daily at **07:30 GST** (so it completes before the 08:00 GST API refresh).
+Run this task daily at **06:30 GST** (so it completes before the 07:00 GST API refresh).
 
 ## Objective
 Conduct deep research on the current UAE/Dubai security situation related to the Iran-Israel conflict and output a structured JSON file that updates the dashboard's manually-curated data **at both national and neighborhood level**.

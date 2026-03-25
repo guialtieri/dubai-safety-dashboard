@@ -1,9 +1,9 @@
-name: Daily Data Refresh (08:00 GST)
+name: Daily Data Refresh (07:00 GST)
 
 on:
   schedule:
-    # 04:00 UTC = 08:00 GST (UAE Time)
-    - cron: '0 4 * * *'
+    # 03:00 UTC = 07:00 GST (UAE Time)
+    - cron: '0 3 * * *'
   workflow_dispatch:  # Allow manual trigger from GitHub UI
 
 permissions:
