@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-24T12:42:51.670Z",
+  "lastUpdated": "2026-03-26T06:52:18.139263Z",
   "nationalSafetyScore": {
     "overall": 68,
     "dayOverDay": -10,
@@ -11,7 +11,7 @@
       "social": 50
     }
   },
-  "dailyBriefing": "On March 24, UAE air defences successfully intercepted all 5 ballistic missiles and 17 UAVs launched by Iran — a 100% intercept rate. Three debris incidents were reported: a fire in Deira from drone debris (contained by midday), a brief power outage in the Mirdif area, and debris near Al Quoz Industrial. The diplomatic situation deteriorated sharply as Trump's 48-hour Hormuz ultimatum expired today with Iran refusing to comply and threatening to mine all Gulf access routes and target regional power plants. Iran published target maps of UAE, Saudi, and Qatari power infrastructure. The UK FCDO upgraded its advisory to 'advise against all but essential travel' to the UAE. The US Embassy (Level 3: Reconsider Travel) has suspended all routine consular services. DXB is operating at partial capacity with Emirates and flydubai on scaled-down networks; AUH has limited long-haul services. UAE government stance remains normal life between alerts, with NCEMA issuing two alerts this morning (both resolved). Schools continue on distance learning through April 3 per KHDA extension.",
+  "dailyBriefing": "On March 24, UAE air defences successfully intercepted all 5 ballistic missiles and 17 UAVs launched by Iran \u2014 a 100% intercept rate. Three debris incidents were reported: a fire in Deira from drone debris (contained by midday), a brief power outage in the Mirdif area, and debris near Al Quoz Industrial. The diplomatic situation deteriorated sharply as Trump's 48-hour Hormuz ultimatum expired today with Iran refusing to comply and threatening to mine all Gulf access routes and target regional power plants. Iran published target maps of UAE, Saudi, and Qatari power infrastructure. The UK FCDO upgraded its advisory to 'advise against all but essential travel' to the UAE. The US Embassy (Level 3: Reconsider Travel) has suspended all routine consular services. DXB is operating at partial capacity with Emirates and flydubai on scaled-down networks; AUH has limited long-haul services. UAE government stance remains normal life between alerts, with NCEMA issuing two alerts this morning (both resolved). Schools continue on distance learning through April 3 per KHDA extension.",
   "kineticData": {
     "national": {
       "interceptRate": [
@@ -937,7 +937,7 @@
     },
     "supermarketStock": {
       "status": "caution",
-      "label": "Adequate — Air Freight Supplement",
+      "label": "Adequate \u2014 Air Freight Supplement",
       "guidance": "Major chains (Carrefour, Lulu, Spinneys) remain stocked. Air-freight supplements continue for fresh produce. Prices rising on imported goods due to Hormuz disruption."
     },
     "fuelAvailability": {
@@ -953,40 +953,40 @@
         "emirate": "Abu Dhabi",
         "lat": 24.2075,
         "lng": 55.7447,
-        "availabilityPct": 81,
-        "availabilityYesterday": 50,
-        "avgPriceAED": 322,
-        "notes": "Estimated (mid tier) — APIs quota-limited"
+        "availabilityPct": 48,
+        "availabilityYesterday": 81,
+        "avgPriceAED": 359,
+        "notes": "Estimated (mid tier) \u2014 APIs quota-limited"
       },
       {
         "destination": "Hatta",
         "emirate": "Dubai",
         "lat": 24.7953,
         "lng": 56.1097,
-        "availabilityPct": 51,
-        "availabilityYesterday": 50,
-        "avgPriceAED": 283,
-        "notes": "Estimated (budget tier) — APIs quota-limited"
+        "availabilityPct": 80,
+        "availabilityYesterday": 51,
+        "avgPriceAED": 221,
+        "notes": "Estimated (budget tier) \u2014 APIs quota-limited"
       },
       {
         "destination": "Dibba (Fujairah)",
         "emirate": "Fujairah",
         "lat": 25.6189,
         "lng": 56.2631,
-        "availabilityPct": 61,
-        "availabilityYesterday": 50,
-        "avgPriceAED": 304,
-        "notes": "Estimated (budget tier) — APIs quota-limited"
+        "availabilityPct": 44,
+        "availabilityYesterday": 61,
+        "avgPriceAED": 181,
+        "notes": "Estimated (budget tier) \u2014 APIs quota-limited"
       },
       {
         "destination": "Ras Al Khaimah City",
         "emirate": "RAK",
         "lat": 25.7895,
         "lng": 55.9432,
-        "availabilityPct": 67,
-        "availabilityYesterday": 50,
-        "avgPriceAED": 322,
-        "notes": "Estimated (mid tier) — APIs quota-limited"
+        "availabilityPct": 59,
+        "availabilityYesterday": 67,
+        "avgPriceAED": 537,
+        "notes": "Estimated (mid tier) \u2014 APIs quota-limited"
       },
       {
         "destination": "Ajman City",
@@ -995,28 +995,28 @@
         "lng": 55.5136,
         "availabilityPct": 50,
         "availabilityYesterday": 50,
-        "avgPriceAED": 503,
-        "notes": "Estimated (mid tier) — APIs quota-limited"
+        "avgPriceAED": 328,
+        "notes": "Estimated (mid tier) \u2014 APIs quota-limited"
       },
       {
         "destination": "Fujairah City",
         "emirate": "Fujairah",
         "lat": 25.1288,
         "lng": 56.3264,
-        "availabilityPct": 43,
-        "availabilityYesterday": 50,
-        "avgPriceAED": 450,
-        "notes": "Estimated (mid tier) — APIs quota-limited"
+        "availabilityPct": 73,
+        "availabilityYesterday": 43,
+        "avgPriceAED": 494,
+        "notes": "Estimated (mid tier) \u2014 APIs quota-limited"
       },
       {
         "destination": "Khor Fakkan",
         "emirate": "Sharjah",
         "lat": 25.3459,
         "lng": 56.3512,
-        "availabilityPct": 46,
-        "availabilityYesterday": 50,
-        "avgPriceAED": 213,
-        "notes": "Estimated (budget tier) — APIs quota-limited"
+        "availabilityPct": 51,
+        "availabilityYesterday": 46,
+        "avgPriceAED": 235,
+        "notes": "Estimated (budget tier) \u2014 APIs quota-limited"
       }
     ],
     "flights": [
@@ -1024,12 +1024,12 @@
         "city": "Muscat",
         "code": "MCT",
         "country": "Oman",
-        "dxbPriceAED": 363,
-        "auhPriceAED": 6792,
-        "dxbDeltaAED": 0,
-        "auhDeltaAED": 0,
-        "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T12:00+04:00",
+        "dxbPriceAED": 377,
+        "auhPriceAED": 362,
+        "dxbDeltaAED": 14,
+        "auhDeltaAED": -6430,
+        "dxbDepart": "2026-03-26T12:00+04:00",
+        "auhDepart": "2026-03-26T12:00+04:00",
         "airline": "Various",
         "source": "Estimated"
       },
@@ -1037,116 +1037,116 @@
         "city": "Frankfurt",
         "code": "FRA",
         "country": "Germany",
-        "dxbPriceAED": 2112,
-        "auhPriceAED": 3441,
-        "dxbDeltaAED": 0,
-        "auhDeltaAED": 0,
-        "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T12:00+04:00",
+        "dxbPriceAED": 1906,
+        "auhPriceAED": 1609,
+        "dxbDeltaAED": -206,
+        "auhDeltaAED": -1832,
+        "dxbDepart": "2026-03-26T12:00+04:00",
+        "auhDepart": "2026-03-26T12:00+04:00",
         "airline": "Various",
-        "source": "Priceline"
+        "source": "Estimated"
       },
       {
         "city": "Amsterdam",
         "code": "AMS",
         "country": "Netherlands",
-        "dxbPriceAED": 2512,
-        "auhPriceAED": 6298,
-        "dxbDeltaAED": 0,
-        "auhDeltaAED": 0,
-        "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T12:00+04:00",
+        "dxbPriceAED": 1759,
+        "auhPriceAED": 1698,
+        "dxbDeltaAED": -753,
+        "auhDeltaAED": -4600,
+        "dxbDepart": "2026-03-26T12:00+04:00",
+        "auhDepart": "2026-03-26T12:00+04:00",
         "airline": "Various",
-        "source": "Priceline"
+        "source": "Estimated"
       },
       {
         "city": "Paris",
         "code": "CDG",
         "country": "France",
-        "dxbPriceAED": 2461,
-        "auhPriceAED": 4623,
-        "dxbDeltaAED": 0,
-        "auhDeltaAED": 0,
-        "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T12:00+04:00",
+        "dxbPriceAED": 1947,
+        "auhPriceAED": 1853,
+        "dxbDeltaAED": -514,
+        "auhDeltaAED": -2770,
+        "dxbDepart": "2026-03-26T12:00+04:00",
+        "auhDepart": "2026-03-26T12:00+04:00",
         "airline": "Various",
-        "source": "Priceline"
+        "source": "Estimated"
       },
       {
         "city": "Rome",
         "code": "FCO",
         "country": "Italy",
-        "dxbPriceAED": 3312,
-        "auhPriceAED": 7089,
-        "dxbDeltaAED": 0,
-        "auhDeltaAED": 0,
-        "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T12:00+04:00",
+        "dxbPriceAED": 1513,
+        "auhPriceAED": 1731,
+        "dxbDeltaAED": -1799,
+        "auhDeltaAED": -5358,
+        "dxbDepart": "2026-03-26T12:00+04:00",
+        "auhDepart": "2026-03-26T12:00+04:00",
         "airline": "Various",
-        "source": "Priceline"
+        "source": "Estimated"
       },
       {
         "city": "London",
         "code": "LHR",
         "country": "United Kingdom",
-        "dxbPriceAED": 3629,
-        "auhPriceAED": 1875,
-        "dxbDeltaAED": 0,
-        "auhDeltaAED": 0,
-        "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T12:00+04:00",
+        "dxbPriceAED": 1729,
+        "auhPriceAED": 1998,
+        "dxbDeltaAED": -1900,
+        "auhDeltaAED": 123,
+        "dxbDepart": "2026-03-26T12:00+04:00",
+        "auhDepart": "2026-03-26T12:00+04:00",
         "airline": "Various",
-        "source": "Priceline"
+        "source": "Estimated"
       },
       {
         "city": "Lisbon",
         "code": "LIS",
         "country": "Portugal",
-        "dxbPriceAED": 3549,
-        "auhPriceAED": 4093,
-        "dxbDeltaAED": 0,
-        "auhDeltaAED": 0,
-        "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T12:00+04:00",
+        "dxbPriceAED": 1544,
+        "auhPriceAED": 1530,
+        "dxbDeltaAED": -2005,
+        "auhDeltaAED": -2563,
+        "dxbDepart": "2026-03-26T12:00+04:00",
+        "auhDepart": "2026-03-26T12:00+04:00",
         "airline": "Various",
-        "source": "Priceline"
+        "source": "Estimated"
       },
       {
         "city": "Rio de Janeiro",
         "code": "GIG",
         "country": "Brazil",
-        "dxbPriceAED": 5095,
-        "auhPriceAED": 6382,
-        "dxbDeltaAED": 0,
-        "auhDeltaAED": 0,
-        "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T12:00+04:00",
+        "dxbPriceAED": 2895,
+        "auhPriceAED": 2928,
+        "dxbDeltaAED": -2200,
+        "auhDeltaAED": -3454,
+        "dxbDepart": "2026-03-26T12:00+04:00",
+        "auhDepart": "2026-03-26T12:00+04:00",
         "airline": "Various",
-        "source": "Priceline"
+        "source": "Estimated"
       },
       {
-        "city": "São Paulo",
+        "city": "S\u00e3o Paulo",
         "code": "GRU",
         "country": "Brazil",
-        "dxbPriceAED": 4688,
-        "auhPriceAED": 8500,
-        "dxbDeltaAED": 0,
-        "auhDeltaAED": 0,
-        "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T12:00+04:00",
+        "dxbPriceAED": 2711,
+        "auhPriceAED": 2650,
+        "dxbDeltaAED": -1977,
+        "auhDeltaAED": -5850,
+        "dxbDepart": "2026-03-26T12:00+04:00",
+        "auhDepart": "2026-03-26T12:00+04:00",
         "airline": "Various",
-        "source": "Priceline"
+        "source": "Estimated"
       },
       {
         "city": "Istanbul",
         "code": "IST",
         "country": "Turkey",
-        "dxbPriceAED": 1089,
-        "auhPriceAED": 2751,
-        "dxbDeltaAED": 0,
-        "auhDeltaAED": 0,
-        "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T12:00+04:00",
+        "dxbPriceAED": 1003,
+        "auhPriceAED": 1175,
+        "dxbDeltaAED": -86,
+        "auhDeltaAED": -1576,
+        "dxbDepart": "2026-03-26T12:00+04:00",
+        "auhDepart": "2026-03-26T12:00+04:00",
         "airline": "Various",
         "source": "Estimated"
       },
@@ -1154,40 +1154,40 @@
         "city": "Mumbai",
         "code": "BOM",
         "country": "India",
-        "dxbPriceAED": 1985,
-        "auhPriceAED": 1645,
-        "dxbDeltaAED": 0,
-        "auhDeltaAED": 0,
-        "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T12:00+04:00",
+        "dxbPriceAED": 909,
+        "auhPriceAED": 931,
+        "dxbDeltaAED": -1076,
+        "auhDeltaAED": -714,
+        "dxbDepart": "2026-03-26T12:00+04:00",
+        "auhDepart": "2026-03-26T12:00+04:00",
         "airline": "Various",
-        "source": "Priceline"
+        "source": "Estimated"
       },
       {
         "city": "Cairo",
         "code": "CAI",
         "country": "Egypt",
-        "dxbPriceAED": 1995,
-        "auhPriceAED": 1779,
-        "dxbDeltaAED": 0,
-        "auhDeltaAED": 0,
-        "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T12:00+04:00",
+        "dxbPriceAED": 1165,
+        "auhPriceAED": 1163,
+        "dxbDeltaAED": -830,
+        "auhDeltaAED": -616,
+        "dxbDepart": "2026-03-26T12:00+04:00",
+        "auhDepart": "2026-03-26T12:00+04:00",
         "airline": "Various",
-        "source": "Priceline"
+        "source": "Estimated"
       },
       {
         "city": "Nairobi",
         "code": "NBO",
         "country": "Kenya",
-        "dxbPriceAED": 2578,
-        "auhPriceAED": 8043,
-        "dxbDeltaAED": 0,
-        "auhDeltaAED": 0,
-        "dxbDepart": "2026-03-15T12:00+04:00",
-        "auhDepart": "2026-03-15T12:00+04:00",
+        "dxbPriceAED": 1377,
+        "auhPriceAED": 1297,
+        "dxbDeltaAED": -1201,
+        "auhDeltaAED": -6746,
+        "dxbDepart": "2026-03-26T12:00+04:00",
+        "auhDepart": "2026-03-26T12:00+04:00",
         "airline": "Various",
-        "source": "Priceline"
+        "source": "Estimated"
       }
     ]
   },
